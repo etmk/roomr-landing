@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 body {
@@ -11,6 +11,12 @@ h1 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   font-weight: 700;
+}
+
+h2 {
+  margin:0;
+  font-size:15px;
+  font-weight:500;
 }
 
 p {
