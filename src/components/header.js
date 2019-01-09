@@ -6,17 +6,27 @@ const Header = ({ siteTitle }) => (
   <div
     style={{
       background: `#fcf2cb`,
-      marginBottom: `1.45rem`,
+      height: 90
     }}
   >
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        height: `100%`,
+        padding: `0`,
+        display: `flex`,
+        alignItems: `center`
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{
+          margin: 0,
+          marginTop: -5,
+          fontFamily: `Roboto`,
+          letterSpacing: 1,
+          fontWeight: 700
+        }}
+      >
         <Link
           to="/"
           style={{
