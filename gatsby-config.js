@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Roomr`,
-    author: `paul schaaf`,
+    description: `Roomr is room management made easy, free, and open-source.`,
+    author: `paul-schaaf`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
