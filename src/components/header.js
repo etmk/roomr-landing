@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -19,17 +18,12 @@ const Header = ({ siteTitle }) => (
           alignItems: `center`
         }}
       >
-        <h1 style={{ marginTop: -5 }}
+        <h1 style={{
+            marginTop: -5,
+            color: `#1e4363`
+          }}
         >
-          <Link
-            to="/"
-            style={{
-              color: `#1e4363`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
+          {siteTitle}
         </h1>
       </div>
     </Container>
