@@ -35,19 +35,20 @@
 
 .hamburger-menu {
   float:right;
+  margin-top:10px;
   margin-right:40px;
   
   cursor: pointer;
 }
 
 .hamburger-menu div {
-  margin-top:8px;
-  height: 3px;
+  margin-top:4px;
+  height: 4px;
   width: 30px;
   border-radius:100px;
   background: #1e4363;
+  transition: .4s;
 }
-
 
 @media screen and (max-width: 1279px) {
   .navbar-links-box:last-child {
