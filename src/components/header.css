@@ -34,7 +34,7 @@
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .navbar-links-box:last-child {
     margin-right:40px;
   }
