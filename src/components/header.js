@@ -2,29 +2,23 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Container from './container';
+import './header.css';
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: `#fcf2cb`
-    }}
-  >
+  <div className="header-box">
     <Container>
-      <div
-        style={{
-          height: 90,
-          padding: `0`,
-          display: `flex`,
-          alignItems: `center`
-        }}
-      >
-        <h1 style={{
-            marginTop: -5,
-            color: `#1e4363`
-          }}
-        >
+      <div className="header-content-box">
+        <h1>
           {siteTitle}
         </h1>
+        <div className="navbar-links-box">
+          <p>Features</p>
+          <p>Pricing</p>
+          <p>Testimonials</p>
+          <p>Sign up/Login</p>
+          <p>Sourcecode</p>
+          <p>Contact</p>
+        </div>
       </div>
     </Container>
   </div>
