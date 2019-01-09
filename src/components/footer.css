@@ -60,6 +60,27 @@
 }
 
 
+.footer-term-box {
+  display: flex;
+  justify-content: center;
+  margin-top:25px;
+  margin-bottom:10px;
+}
+
+.footer-term-box p {
+  font-size: 11px;
+  margin-left:10px;
+}
+
+.footer-term-box p:last-child {
+  margin-top:-2px;
+}
+
+.footer-term-box p span {
+  font-size:13px;
+}
+
+
 @media screen and (max-width: 768px) {
   .footer-content-box div {
     margin-right:50px;
@@ -84,11 +105,15 @@
   .footer-company-box p {
     margin-top:10px;
   }
+
+  .footer-term-box {
+    margin-top:0px;
+  }
 }
 
 @media screen and (min-width: 501px) {
   .footer-box {
-    height:200px;
+    height:190px;
   }
 }
 
