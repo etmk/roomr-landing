@@ -20,6 +20,7 @@
 
 .footer-content-box h2 {
   padding-right:80px;
+  cursor: default;
 }
 
 .footer-content-box p {
@@ -32,6 +33,10 @@
   margin-bottom:10px;
 }
 
+.footer-address-box p {
+  cursor: default;
+}
+
 .footer-follow-box {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +44,11 @@
 
 .footer-follow-box p {
   margin-right:20px;
+  cursor: pointer;
+}
+
+.footer-follow-box p:hover {
+  font-weight:400;
 }
 
 .footer-follow-box .footer-github {
@@ -51,14 +61,18 @@
 }
 
 .footer-company-box p {
+  cursor: pointer;
   margin-right:20px;
   margin-top:-20px;
+}
+
+.footer-company-box p:hover {
+  font-weight:400;
 }
 
 .footer-company-box .footer-culture {
   margin-left:7px;
 }
-
 
 .footer-term-box {
   display: flex;
@@ -70,6 +84,7 @@
 .footer-term-box p {
   font-size: 11px;
   margin-left:10px;
+  cursor: pointer;
 }
 
 .footer-term-box p:last-child {
@@ -108,6 +123,7 @@
 
   .footer-term-box {
     margin-top:0px;
+    margin-right:10px;
   }
 }
 
