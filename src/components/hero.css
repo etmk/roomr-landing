@@ -2,4 +2,78 @@
   height: 700px;
   width:100vw;
   background: #fcf2cb;
+  color: #1e4363;
+  box-sizing: border-box;
+}
+
+.hero-header-box {
+  padding-top:130px;
+}
+
+.hero-header-box p{
+  font-size:40px;
+  font-weight:700;
+  letter-spacing: 1px;
+  font-family: 'Roboto'
+}
+
+.hero-header-box .second-sentence {
+  margin-top:25px;
+}
+
+.hero-buttons {
+  margin-top:20px;
+  display: flex;
+}
+
+.hero-buttons p {
+  font-size:20px;
+  font-weight:500;
+}
+
+.hero-buttons p:last-child {
+  margin-left:30px;
+}
+
+
+
+@media screen and (max-width: 1279px) {
+  .hero {
+    padding-left:40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-left:20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    padding-left:0px;
+  }
+
+  .hero-header-box {
+    padding-top:20px;
+    text-align: center;
+  }
+
+  .hero-header-box p{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-family: 'Roboto'
+  }
+  
+  .hero-buttons {
+    margin-top:30px;
+    justify-content: center;
+  }
+
+  .hero-buttons p {
+    font-size:17px;
+    font-weight:500;
+    cursor: pointer;
+  }
 }
