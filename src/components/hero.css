@@ -52,10 +52,11 @@
 @media screen and (max-width: 500px) {
   .hero {
     padding-left:0px;
+    height:325px;
   }
 
   .hero-header-box {
-    padding-top:230px;
+    padding-top:50px;
     text-align: center;
   }
 
