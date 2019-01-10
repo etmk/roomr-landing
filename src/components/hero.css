@@ -43,6 +43,16 @@
   }
 }
 
+@media screen and (max-width: 1087px) {
+  .hero {
+    height:500px;
+  }
+
+  .hero-header-box {
+    padding-top:85px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     padding-left:20px;
