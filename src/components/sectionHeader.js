@@ -8,6 +8,14 @@ const SectionHeader = ({ text, lineWidth, color }) => (
     >
       {text}
     </h2>
+    <div
+      className="section-header__underline"
+      style={{
+        "background": (color === 'blue') ? "#1e4363" : "#fcf2cb",
+        "width": lineWidth
+      }}
+    >
+    </div>
   </div>
 )
 

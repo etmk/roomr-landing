@@ -8,7 +8,7 @@ const FeatureSection = () => (
   <div className="feature-section">
     <Container>
       <Centrifier>
-        <SectionHeader text="Features"/>
+        <SectionHeader text="Features" lineWidth="250px"/>
       </Centrifier>
     </Container>
   </div>
