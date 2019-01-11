@@ -1,16 +1,15 @@
-import React from 'react'
-import { graphql } from "gatsby"
+import React from 'react';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 import Hero from '../components/hero';
 import FeatureSection from '../components/featureSection';
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`roomr`, `room management`, `open-source`, `free`]} />
     <Hero />
-    <FeatureSection triangle={data.triangle.childImageSharp.fixed}/>
+    <FeatureSection />
   </Layout>
 )
 
