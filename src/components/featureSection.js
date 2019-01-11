@@ -16,16 +16,14 @@ import key from "../images/key_icon.svg";
 
 const FeatureSection = () => (
   <div className="feature-section">
-    <Container>
-      <Centrifier>
+    
         <MediaQuery maxWidth={600}>
         <SectionHeader text="Features" lineWidth="180px"/>
         </MediaQuery>
         <MediaQuery minWidth={601}>
           <SectionHeader text="Features" lineWidth="250px"/>
         </MediaQuery>
-      </Centrifier>
-    </Container>
+      
     <Container>
       <Centrifier>
       <div className="feature-box">
