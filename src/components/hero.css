@@ -61,7 +61,11 @@
   }
 
   .hero-header-box {
-    padding-top:0px;
+    padding-top:20px;
+  }
+
+  .hero-header-box p {
+    font-size:30px;
   }
 }
 
