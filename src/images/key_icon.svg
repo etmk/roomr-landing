@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149" height="149" viewBox="0 0 149 149">
+  <defs>
+    <circle id="key_icon-b" cx="41.734" cy="108.266" r="41.734"/>
+    <filter id="key_icon-a" width="118%" height="118%" x="-9%" y="-6.6%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+    <circle id="key_icon-d" cx="41.129" cy="108.871" r="12.097"/>
+    <filter id="key_icon-c" width="153.7%" height="153.7%" x="-26.9%" y="-26.9%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+      <feOffset in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+    <polygon id="key_icon-f" points="91.218 11.266 105.349 -2.865 117.029 11.271 117.03 16.82 123.076 22.866 117.032 28.91 123.334 35.975 117.035 42.274 123.541 48.78 117.089 55.232 116.863 91.487 116.843 97.119 115.532 97.992 112.925 97.991 104.154 96.686 96.304 97.011 92.066 97.987 90.762 96.683"/>
+    <filter id="key_icon-e" width="142.7%" height="113.9%" x="-21.4%" y="-5%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" transform="translate(4.5 -8)">
+    <use fill="#000" filter="url(#key_icon-a)" xlink:href="#key_icon-b"/>
+    <use fill="#1E4363" stroke="#FCF2CB" xlink:href="#key_icon-b"/>
+    <use fill="#000" filter="url(#key_icon-c)" xlink:href="#key_icon-d"/>
+    <use stroke="#FCF2CB" xlink:href="#key_icon-d"/>
+    <g transform="rotate(45 107.152 47.563)">
+      <use fill="#000" filter="url(#key_icon-e)" xlink:href="#key_icon-f"/>
+      <path fill="#1E4363" fill-rule="evenodd" stroke="#FCF2CB" stroke-linejoin="square" d="M91.7165922,11.4745722 L91.2631886,96.4771655 L92.2241582,97.4381352 L96.2832143,96.5117579 L104.227817,96.1911652 L112.924833,97.4910596 L115.38103,97.4915275 L116.344346,96.8508146 L116.362676,91.4842022 L116.590526,55.0239407 L122.834109,48.780358 L116.327864,42.2741135 L122.64663,35.955348 L116.344932,28.8903627 L122.369037,22.8662574 L116.530161,17.0273818 L116.529099,11.4511608 L105.313758,-2.12259328 L91.7165922,11.4745722 Z"/>
+    </g>
+    <path fill="#1E4363" d="M56.8548387,71.7917251 L60.561721,71.7917251 C60.561721,71.7917251 61.7973485,71.1605891 64.2686033,69.898317 C66.7398582,68.6360449 71.0645542,68.6360449 77.2426914,69.898317 L77.2426914,82.3948107 L77.8394583,83.0653943 C79.5984756,85.0420372 79.4220551,88.0703881 77.4454122,89.8294054 C77.3794242,89.8881282 77.3118248,89.9450148 77.2426914,90 C77.2426914,90 77.2426914,90 77.2426914,90 C77.151842,90.0722571 78.4413872,89.5725359 78.5,90 C78.6175596,90.8573637 77.6246526,92.9048813 77.5,93 C76.4924704,93.7688158 75.7689619,98 75.5,98 C75.0595296,98 70.7261963,97.3333333 62.5,96 L56.8548387,84.4775596"/>
+    <rect width="6" height="7" x="72.862" y="89.304" fill="#1E4363" transform="rotate(75 75.862 92.804)"/>
+  </g>
+</svg>

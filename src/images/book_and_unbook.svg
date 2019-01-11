@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="151px" viewBox="0 0 138 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>schedule icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.2%" y="-8.4%" width="118.5%" height="116.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-55.000000, -855.000000)" fill-rule="nonzero" stroke="#FCF2CB">
+            <g id="schedule-icon" filter="url(#filter-1)" transform="translate(59.000000, 857.000000)">
+                <path d="M13,10.5 C6.09644063,10.5 0.5,16.0964406 0.5,23 L0.5,125.047946 C0.5,131.050025 4.76601779,136.20485 10.6621899,137.327386 C28.775276,140.775834 46.8877462,142.5 65,142.5 C83.1122547,142.5 101.224726,140.775834 119.337813,137.327385 C125.233982,136.204847 129.499997,131.050024 129.499997,125.047949 L129.5,23 C129.5,16.0964406 123.903559,10.5 117,10.5 L13,10.5 Z" id="Rectangle"></path>
+                <path d="M88.5,0.617647059 L88.5,19.7647059" id="Line" stroke-linecap="square"></path>
+                <path d="M41.5,0.617647059 L41.5,19.7647059" id="Line" stroke-linecap="square"></path>
+                <path d="M105.473333,35.5 L27.5266667,35.5" id="Line" stroke-linecap="square"></path>
+                <path d="M96,66 C70.8606061,92.6666667 58.2909091,106 58.2909091,106 C58.2909091,106 51.1509287,100.19156 36.8709681,88.5746813 C36.4639003,88.243528 35.8402443,87.7361781 35,87.0526316" id="Line" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
