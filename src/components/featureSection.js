@@ -27,10 +27,10 @@ const FeatureSection = () => (
           </div>
           <div className="feature-box__row">
             <div className="feature-box__card">
-             <p>calendar<br></br>integrations</p>
+             <p>Calendar<br></br>integrations</p>
             </div>
             <div className="feature-box__card">
-             <p>usage<br></br>analytics</p>
+             <p>Usage<br></br>analytics</p>
             </div>
             <div className="feature-box__card">
              <p>SAML single<br></br>sign-on</p>
