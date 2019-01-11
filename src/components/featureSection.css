@@ -18,6 +18,10 @@
   display:flex;
 }
 
+.feature-box__row:last-child {
+  margin-top:90px;
+}
+
 .feature-box__card {
   margin-right:150px;
 }
@@ -25,3 +29,4 @@
 .feature-box__card:last-child {
   margin-right:0px;
 }
+

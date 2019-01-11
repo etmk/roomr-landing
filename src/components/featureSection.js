@@ -26,8 +26,14 @@ const FeatureSection = () => (
             </div>
           </div>
           <div className="feature-box__row">
-            <div className="feature-box__feature-card">
-
+            <div className="feature-box__card">
+             <p>calendar<br></br>integrations</p>
+            </div>
+            <div className="feature-box__card">
+             <p>usage<br></br>analytics</p>
+            </div>
+            <div className="feature-box__card">
+             <p>SAML single<br></br>sign-on</p>
             </div>
           </div>
         </div>
