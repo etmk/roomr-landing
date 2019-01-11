@@ -15,15 +15,3 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
-
-export const query = graphql`
-  query {
-    triangle: file(relativePath: { eq: "feature-triangle.png" }) {
-      childImageSharp {
-        fixed(width: 15, height: 15) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`
