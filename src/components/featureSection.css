@@ -1,5 +1,5 @@
 .feature-section {
-  height:950px;
+  height:930px;
   background: #1e4363;
 }
 
@@ -40,30 +40,33 @@
   margin-bottom:30px;
 }
 
-.feature-icon {
-  margin-top:50px;
-  width:150px;
-}
-
 .schedule-icon {
-  margin-top:50px;
+  margin-top:35px;
   width:150px;
 }
 
 .device-icon {
-  margin-top:60px;
+  margin-top:45px;
   width:180px;
 }
 
 .people-icon {
-  margin-top:60px;
-  width:180px;
+  margin-top:45px;
+  width:170px;
 }
 
 .analytics-icon{
-  margin-top:60px;
+  margin-top:50px;
+  width:180px;
 }
 
 .key-icon {
-  margin-top:70px;
+  margin-top:60px;
+  width:140px;
+}
+
+@media screen and (max-width: 1087px) {
+  .feature-box__card {
+    margin-right:100px;
+  }
 }
