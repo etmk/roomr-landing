@@ -97,7 +97,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-content-box div {
     margin-right:50px;
   }

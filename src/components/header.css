@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hamburger-menu {
     margin-right:20px;
   }
