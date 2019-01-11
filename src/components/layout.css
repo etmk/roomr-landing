@@ -21,12 +21,14 @@ h2 {
   letter-spacing: 3px;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  cursor: default;
 }
 
 h3 {
   margin:0;
   font-size:15px;
   font-weight:500;
+  cursor: default;
 }
 
 p {

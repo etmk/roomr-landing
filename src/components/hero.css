@@ -29,6 +29,7 @@
 .hero-buttons p {
   font-size:20px;
   font-weight:500;
+  cursor: pointer;
 }
 
 .hero-buttons p:last-child {
