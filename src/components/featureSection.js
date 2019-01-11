@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 import Container from './container';
 import Centrifier from './centrifier';
@@ -17,7 +18,12 @@ const FeatureSection = () => (
   <div className="feature-section">
     <Container>
       <Centrifier>
-        <SectionHeader text="Features" lineWidth="250px"/>
+        <MediaQuery maxWidth={600}>
+        <SectionHeader text="Features" lineWidth="180px"/>
+        </MediaQuery>
+        <MediaQuery minWidth={601}>
+          <SectionHeader text="Features" lineWidth="250px"/>
+        </MediaQuery>
       </Centrifier>
     </Container>
     <Container>
