@@ -56,7 +56,12 @@
 
 @media screen and (max-width: 767px) {
   .hero {
+    height:300px;
     padding-left:20px;
+  }
+
+  .hero-header-box {
+    padding-top:0px;
   }
 }
 
