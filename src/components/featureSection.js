@@ -1,10 +1,13 @@
 import React from 'react';
-import './featureSection.css';
+import Img from 'gatsby-image';
+
 import Container from './container';
 import Centrifier from './centrifier';
 import SectionHeader from './sectionHeader';
 
-const FeatureSection = () => (
+import './featureSection.css';
+
+const FeatureSection = ({ triangle }) => (
   <div className="feature-section">
     <Container>
       <Centrifier>
@@ -16,6 +19,7 @@ const FeatureSection = () => (
       <div className="feature-box">
           <div className="feature-box__row">
             <div className="feature-box__card">
+              <Img fixed={triangle}/>
               <p>Book and<br></br>unbook rooms</p>
             </div>
             <div className="feature-box__card">
