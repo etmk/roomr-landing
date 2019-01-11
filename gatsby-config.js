@@ -24,6 +24,7 @@ module.exports = {
         background_color: `#1e4363`,
         theme_color: `#1e4363`,
         display: `minimal-ui`,
+        icon: `src/images/roomr_icon.png`
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
