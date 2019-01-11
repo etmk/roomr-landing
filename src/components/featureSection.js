@@ -11,6 +11,28 @@ const FeatureSection = () => (
         <SectionHeader text="Features" lineWidth="250px"/>
       </Centrifier>
     </Container>
+    <Container>
+      <Centrifier>
+      <div className="feature-box">
+          <div className="feature-box__row">
+            <div className="feature-box__card">
+              <p>Book and<br></br>unbook rooms</p>
+            </div>
+            <div className="feature-box__card">
+              <p>Works on<br></br>every device</p>
+            </div>
+            <div className="feature-box__card">
+              <p>Admin and<br></br>members accounts</p>
+            </div>
+          </div>
+          <div className="feature-box__row">
+            <div className="feature-box__feature-card">
+
+            </div>
+          </div>
+        </div>
+      </Centrifier>
+    </Container>
   </div>
 )
 
