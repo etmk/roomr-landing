@@ -1,5 +1,5 @@
 .feature-section {
-  height:930px;
+  padding-bottom:50px;
   background: #1e4363;
 }
 
@@ -16,22 +16,37 @@
 
 .feature-box__row {
   display:flex;
-}
-
-.feature-box__row:last-child {
-  margin-top:70px;
+  max-width:1000px;
+  flex-wrap: wrap;
 }
 
 .feature-box__card {
   width:200px;
-  margin-right:200px;
   display:flex;
   flex-direction: column;
   align-items: center;
 }
 
-.feature-box__card:last-child {
-  margin-right:0px;
+.card--book {
+  margin-right:200px;
+}
+
+.card--device {
+  margin-right:200px;
+}
+
+.card--sync {
+  margin-top:60px;
+  margin-right:200px;
+}
+
+.card--analytics {
+  margin-top:60px;
+  margin-right:200px;
+}
+
+.card--key {
+  margin-top: 60px;
 }
 
 .feature-triangle{
@@ -66,7 +81,59 @@
 }
 
 @media screen and (max-width: 1087px) {
-  .feature-box__card {
+  .feature-box__row {
+    width:800px;
+  }
+  .card--book {
     margin-right:100px;
+  }
+
+  .card--device {
+    margin-right:100px;
+  }
+
+  .card--sync {
+    margin-right:100px;
+  }
+
+  .card--analytics {
+    margin-right:100px;
+  }
+  
+}
+
+@media screen and (max-width: 930px) {
+  .card--device {
+    margin-right:0px;
+  }
+  .feature-box__row{
+    width:500px;
+  }
+
+  .card--people {
+    margin-top:60px;
+    margin-right:100px;
+  }
+
+  .card--sync {
+    margin-right:0px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .feature-triangle {
+    margin-bottom:15px;
+  }
+  .card--book {
+    margin-right:0px;
+  }
+
+  .card--device {
+    margin-top:60px;
+  }
+
+  .feature-box__row{
+    width:200px;
   }
 }
