@@ -11,7 +11,7 @@
 }
 
 .feature-box {
-  margin-top:70px;
+  margin-top:60px;
 }
 
 .feature-box__row {
@@ -19,11 +19,12 @@
 }
 
 .feature-box__row:last-child {
-  margin-top:90px;
+  margin-top:70px;
 }
 
 .feature-box__card {
-  margin-right:150px;
+  width:200px;
+  margin-right:200px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +42,28 @@
 
 .feature-icon {
   margin-top:50px;
+  width:150px;
+}
+
+.schedule-icon {
+  margin-top:50px;
+  width:150px;
+}
+
+.device-icon {
+  margin-top:60px;
+  width:180px;
+}
+
+.people-icon {
+  margin-top:60px;
+  width:180px;
+}
+
+.analytics-icon{
+  margin-top:60px;
+}
+
+.key-icon {
+  margin-top:70px;
 }
