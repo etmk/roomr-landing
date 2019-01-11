@@ -11,11 +11,11 @@ const Footer = () => (
       <div>
         <div className="footer-content-box">
           <div className="footer-address-box">
-            <h2>Address</h2>
+            <h3>Address</h3>
             <p>33rd, Roomrstreet, <br />Roomrtown</p>
           </div>
           <div className="footer-follow-box">
-            <h2>Follow us</h2>
+            <h3>Follow us</h3>
             <p>Facebook</p>
             <p>LinkedIn</p>
             <p>Twitter</p>
@@ -23,7 +23,7 @@ const Footer = () => (
             <p>Youtube</p>
           </div>
           <div className="footer-company-box">
-            <h2>Company</h2>
+            <h3>Company</h3>
             <p>About</p>
             <p className="footer-culture">Culture</p>
             <p>Career</p>
