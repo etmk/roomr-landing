@@ -4,7 +4,7 @@ import './hero.css';
 import Container from './container';
 
 const Hero = () => (
-  <div  className="hero">
+  <div className="hero">
     <Container>
       <div className="hero-header-box">
         <div className="first-sentence">
