@@ -122,6 +122,12 @@
 
 
 @media screen and (max-width: 600px) {
+  .feature-section {
+    padding-bottom:30px;
+  }
+  .feature-box {
+    margin-top:40px;
+  }
   .feature-triangle {
     margin-bottom:15px;
   }
@@ -130,10 +136,50 @@
   }
 
   .card--device {
-    margin-top:60px;
+    margin-top:50px;
+  }
+
+  .card--people {
+    margin-top:50px;
+    margin-right:0px;
+  }
+
+  .card--analytics {
+    margin-top:50px;
+    margin-right:0px;
+  }
+  
+  .card--key {
+    margin-top:50px;
   }
 
   .feature-box__row{
     width:200px;
   }
+
+  .schedule-icon {
+    margin-top:25px;
+    width:100px;
+  }
+
+  .device-icon {
+    margin-top:30px;
+    width:120px;
+  }
+
+  .people-icon {
+    margin-top:25px;
+    width:115px;
+  }
+
+  .analytics-icon {
+    margin-top:30px;
+    width:120px;
+  }
+
+  .key-icon {
+    margin-top:30px;
+    width:100px;
+  }
+  
 }
