@@ -11,6 +11,10 @@
   font-weight:500;
 }
 
+.pricing__toggle-box p{
+  cursor: default;
+}
+
 .pricing__toggle-box .toggle-background {
   height:21px;
   width:50px;
