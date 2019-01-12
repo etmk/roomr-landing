@@ -1,6 +1,7 @@
 .sourcecode-section {
   background: #1e4363;
   color: #fcf2cb;
+  padding-bottom: 60px;
 }
 
 .sourcecode-section .sourcecode-text-box {
@@ -15,4 +16,22 @@
 .sourcecode-section .sourcecode-text-box img {
   margin-left:10px;
   margin-right:10px;
+}
+
+.sourcecode-section .sourcecode-content-box {
+  margin-top:60px;
+  display: flex;
+}
+
+.sourcecode-section .sourcecode-content-box .github-box {
+  text-align: center;
+}
+
+.sourcecode-section .sourcecode-content-box .github-box p{
+  margin-top:10px;
+  text-align: center;
+}
+
+.sourcecode-section .sourcecode-content-box .github-box:first-child{
+  margin-right:180px;
 }

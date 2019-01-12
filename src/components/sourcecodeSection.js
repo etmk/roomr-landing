@@ -6,6 +6,7 @@ import Centrifier from './centrifier';
 
 import './sourcecodeSection.css';
 import heartIcon from '../images/heart_icon.svg';
+import githubLogo from '../images/github _logo.svg';
 
 const SourcecodeSection = () => (
   <div className="sourcecode-section">
@@ -16,6 +17,18 @@ const SourcecodeSection = () => (
           <p>We</p>
           <img src={heartIcon} />
           <p>Open Source</p>
+        </div>
+      </Centrifier>
+      <Centrifier>
+        <div className="sourcecode-content-box">
+          <div className="github-box">
+            <img src={githubLogo} />
+            <p>Roomr App</p>
+          </div>
+          <div className="github-box">
+            <img src={githubLogo} />
+            <p>Roomr Landing</p>
+          </div>
         </div>
       </Centrifier>
     </Container>
