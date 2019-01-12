@@ -13,7 +13,7 @@ const PricingSection = () => (
     <SectionHeader
       isBlue
       text="Pricing" 
-      smallLine="180px"
+      smallLine="160px"
       bigLine="250px"
     />
     <Container>
