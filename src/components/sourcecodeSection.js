@@ -15,18 +15,18 @@ const SourcecodeSection = () => (
       <Centrifier>
         <div className="sourcecode-text-box">
           <p>We</p>
-          <img src={heartIcon} />
+          <img alt="heart icon" src={heartIcon} />
           <p>Open Source</p>
         </div>
       </Centrifier>
       <Centrifier>
         <div className="sourcecode-content-box">
           <div className="github-box">
-            <img src={githubLogo} />
+            <img alt="github logo" src={githubLogo} />
             <p>Roomr App</p>
           </div>
           <div className="github-box">
-            <img src={githubLogo} />
+            <img alt="github logo" src={githubLogo} />
             <p>Roomr Landing</p>
           </div>
         </div>
