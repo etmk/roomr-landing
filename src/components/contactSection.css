@@ -2,3 +2,15 @@
   background: #fcf2cb;
   color: #1e4363;
 }
+
+.contact-section .contact-text-box {
+  margin-top:30px;
+}
+
+.contact-section .contact-text-box p {
+  width:500px;
+  font-size:15px;
+  font-weight:500;
+  line-height:25px;
+  text-align: center;
+}
