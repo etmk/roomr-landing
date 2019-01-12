@@ -35,3 +35,23 @@
 .sourcecode-section .sourcecode-content-box .github-box:first-child{
   margin-right:180px;
 }
+
+@media screen and (max-width:600px) {
+  .sourcecode-section {
+    padding-bottom:40px;
+  }
+
+  .sourcecode-section .sourcecode-text-box {
+    margin-top:30px;
+  }
+
+  .sourcecode-section .sourcecode-content-box .github-box:first-child{
+    margin-right:100px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .sourcecode-section .sourcecode-content-box .github-box:first-child{
+    margin-right:50px;
+  }
+}
