@@ -8,6 +8,7 @@ import PricingSection from '../components/pricingSection';
 import TestimonialSection from '../components/testimonialSection';
 import LoginSection from '../components/loginSection';
 import SourcecodeSection from '../components/sourcecodeSection';
+import ContactSection from '../components/contactSection';
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <TestimonialSection />
     <LoginSection />
     <SourcecodeSection />
+    <ContactSection />
   </Layout>
 )
 
