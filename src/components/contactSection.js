@@ -7,6 +7,9 @@ import Centrifier from './centrifier';
 import './contactSection.css';
 
 import fbIcon from '../images/fb_icon.svg';
+import linkedinIcon from '../images/linkedin_icon.svg';
+import mailIcon from '../images/mail_icon.svg';
+import twitterIcon from '../images/twitter_icon.svg';
 
 const ContactSection = () => (
   <div className="contact-section">
@@ -20,9 +23,9 @@ const ContactSection = () => (
       <Centrifier>
         <div className="contact-social-box">
           <img src={fbIcon} />
-          <img src={fbIcon} />
-          <img src={fbIcon} />
-          <img src={fbIcon} />
+          <img src={twitterIcon} />
+          <img src={linkedinIcon} />
+          <img src={mailIcon} />
         </div>
       </Centrifier>
     </Container>
