@@ -4,12 +4,16 @@
 }
 
 .testimonial-box {
-  width:600px;
+  
   margin-top:50px;
+  display: flex;
 }
 
 .testimonial {
   font-size:14px;
   line-height: 25px;
   text-align:center;
+  width:600px;
+  margin-left:60px;
+  margin-right:60px;
 }

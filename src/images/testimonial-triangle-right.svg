@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="42" viewBox="0 0 24 42">
-  <path fill="#FCF2CB" d="M407.195832,962.463919 L385.675725,982.190684 C385.268606,982.563876 384.636038,982.536374 384.262846,982.129255 C384.093785,981.944825 384,981.703722 384,981.45353 L384,942 C384,941.447715 384.447715,941 385,941 C385.250192,941 385.491295,941.093785 385.675725,941.262846 L407.195832,960.989611 C407.602951,961.362803 407.630454,961.995371 407.257261,962.40249 C407.237684,962.423846 407.217189,962.444342 407.195832,962.463919 Z" transform="translate(-384 -941)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="49" viewBox="0 0 31 49">
+  <defs>
+    <path id="testimonial-triangle-right-b" d="M407.195832,962.463919 L385.675725,982.190684 C385.268606,982.563876 384.636038,982.536374 384.262846,982.129255 C384.093785,981.944825 384,981.703722 384,981.45353 L384,942 C384,941.447715 384.447715,941 385,941 C385.250192,941 385.491295,941.093785 385.675725,941.262846 L407.195832,960.989611 C407.602951,961.362803 407.630454,961.995371 407.257261,962.40249 C407.237684,962.423846 407.217189,962.444342 407.195832,962.463919 Z"/>
+    <filter id="testimonial-triangle-right-a" width="155.3%" height="131.4%" x="-27.6%" y="-13.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" transform="translate(-380 -938)">
+    <use fill="#000" filter="url(#testimonial-triangle-right-a)" xlink:href="#testimonial-triangle-right-b"/>
+    <use fill="#FCF2CB" xlink:href="#testimonial-triangle-right-b"/>
+  </g>
 </svg>
