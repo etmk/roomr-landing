@@ -19,7 +19,7 @@
 }
 
 .sourcecode-section .sourcecode-content-box {
-  margin-top:60px;
+  margin-top:55px;
   display: flex;
 }
 
@@ -45,8 +45,17 @@
     margin-top:30px;
   }
 
+  .sourcecode-section .sourcecode-content-box {
+    margin-top:35px;
+  }
+
   .sourcecode-section .sourcecode-content-box .github-box:first-child{
     margin-right:100px;
+  }
+
+  .sourcecode-section .sourcecode-content-box img {
+    height:60px;
+    width:60px;
   }
 }
 
