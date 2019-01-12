@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 import Container from './container';
 import Centrifier from './centrifier';
@@ -35,6 +36,17 @@ const PricingSection = () => (
         </div>
       </Centrifier>
     </Container>
+    <MediaQuery maxWidth={920}>
+      <Container>
+        <Centrifier>
+          <div className="pricing__swipe-indicator">
+            <div className="indicator-box"></div>
+            <div className="indicator-box"></div>
+            <div className="indicator-box"></div>
+          </div>
+        </Centrifier>
+      </Container>
+    </MediaQuery>
   </div>
 )
 

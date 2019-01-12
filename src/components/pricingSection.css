@@ -1,12 +1,12 @@
 .pricing-section {
   background: #fcf2cb;
   color: #1e4363;
-  padding-bottom:50px;
+  padding-bottom:40px;
 }
 
 .pricing__toggle-box {
   display: flex;
-  margin-top:35px;
+  margin-top:33px;
   margin-bottom:35px;
   font-size:18px;
   font-weight:500;
@@ -56,6 +56,23 @@
   margin-right:0px;
 }
 
+.pricing__swipe-indicator {
+  margin-top:40px;
+  display:flex;
+}
+
+.pricing__swipe-indicator .indicator-box {
+  height:15px;
+  width:15px;
+  background: #1e4363;
+  border-radius:3px;
+  margin-right:15px;
+  opacity:0.5;
+}
+
+.pricing__swipe-indicator .indicator-box:first-child {
+  opacity:1;
+}
 
 @media screen and (max-width:999px) {
   .pricing__plans-box .plan-box {
