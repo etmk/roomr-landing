@@ -74,6 +74,10 @@
   opacity:1;
 }
 
+.pricing__swipe-indicator .indicator-box:last-child {
+  margin-right:0px;
+}
+
 @media screen and (max-width:999px) {
   .pricing__plans-box .plan-box {
     margin-right:40px;

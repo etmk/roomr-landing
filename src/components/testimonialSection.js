@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 import SectionHeader from './sectionHeader';
 
@@ -15,10 +16,30 @@ const TestimonialSection = () => (
     <Container>
       <Centrifier>
         <div className="testimonial-box">
-          <img alt="testimonial triangle left" src={triangleLeft}/>
+          <MediaQuery minWidth={700}>
+            <img alt="testimonial triangle left" src={triangleLeft}/>
+          </MediaQuery>
           <p className="testimonial">We used to spend loads of time looking for rooms. Additionally, workers looking for rooms would interrupt meetings because they were not sure whether a room was vacant or not. Roomr helped us find rooms more quickly and made sure everyone was informed at all times.</p>
-          <img alt="testimonial triangle right" src={triangleRight}/>
+          <MediaQuery minWidth={700}>
+            <img alt="testimonial triangle right" src={triangleRight}/>
+          </MediaQuery>
         </div>
+      </Centrifier>
+    </Container>
+    <Container>
+      <Centrifier>
+        <div className="testimonial-company">
+          <p>CEO of someCompany Inc.</p>
+        </div>
+      </Centrifier>
+    </Container>
+    <Container>
+      <Centrifier>
+      <div className="testimonial__swipe-indicator">
+            <div className="indicator-box"></div>
+            <div className="indicator-box"></div>
+            <div className="indicator-box"></div>
+          </div>
       </Centrifier>
     </Container>
   </div>
