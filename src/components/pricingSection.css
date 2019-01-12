@@ -1,3 +1,36 @@
 .pricing-section {
   background: #fcf2cb;
+  color: #1e4363;
+}
+
+.pricing__toggle-box {
+  display: flex;
+  margin-top:35px;
+  margin-bottom:35px;
+  font-size:18px;
+  font-weight:500;
+}
+
+.toggle-background {
+  height:21px;
+  width:50px;
+  background: #1e4363;
+  border-radius:6px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:3px;
+}
+
+.toggle-foreground {
+  height:15px;
+  width:15px;
+  background: #fcf2cb;
+  border-radius:4px;
+  margin-top:3px;
+  margin-left:4px;
+  transition: .3s ease-in-out;
+}
+
+.toggle-background:hover .toggle-foreground {
+  transform: translateX(27px);
 }

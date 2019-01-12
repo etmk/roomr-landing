@@ -14,7 +14,18 @@ const PricingSection = () => (
       text="Pricing" 
       smallLine="180px"
       bigLine="250px"
-    /> 
+    />
+    <Container>
+      <Centrifier>
+        <div className="pricing__toggle-box">
+          <p>Monthly</p>
+          <div className="toggle-background">
+            <div className="toggle-foreground"></div>
+          </div>
+          <p>Annually</p>
+        </div>
+      </Centrifier>
+    </Container>
   </div>
 )
 
