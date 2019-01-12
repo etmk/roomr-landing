@@ -22,13 +22,13 @@ const SourcecodeSection = () => (
       <Centrifier>
         <div className="sourcecode-content-box">
           <div className="github-box">
-          <a target="_blank" href="https://github.com/paul-schaaf/roomr">
+          <a rel="noopener noreferrer" target="_blank" href="https://github.com/paul-schaaf/roomr">
             <img alt="github logo" src={githubLogo} />
           </a>
             <p>Roomr App</p>
           </div>
           <div className="github-box">
-            <a target="_blank" href="https://github.com/paul-schaaf/roomr-landing">
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/paul-schaaf/roomr-landing">
               <img alt="github logo" src={githubLogo} />
             </a>
             <p>Roomr Landing</p>
