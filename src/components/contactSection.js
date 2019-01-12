@@ -22,10 +22,10 @@ const ContactSection = () => (
       </Centrifier>
       <Centrifier>
         <div className="contact-social-box">
-          <img src={fbIcon} />
-          <img src={twitterIcon} />
-          <img src={linkedinIcon} />
-          <img src={mailIcon} />
+          <img alt="fb icon" src={fbIcon} />
+          <img alt="twitter icon" src={twitterIcon} />
+          <img alt="linkedin icon" src={linkedinIcon} />
+          <img alt="mail icon" src={mailIcon} />
         </div>
       </Centrifier>
     </Container>
