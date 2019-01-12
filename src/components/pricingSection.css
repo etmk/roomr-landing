@@ -1,6 +1,7 @@
 .pricing-section {
   background: #fcf2cb;
   color: #1e4363;
+  padding-bottom:50px;
 }
 
 .pricing__toggle-box {
@@ -37,4 +38,57 @@
 
 .pricing__toggle-box .toggle-background:hover .toggle-foreground {
   transform: translateX(27px);
+}
+
+.pricing__plans-box {
+  display: flex;
+}
+
+.pricing__plans-box .plan-box {
+  height:400px;
+  width:250px;
+  box-sizing: border-box;
+  border: 2px solid #1e4363;
+  margin-right:80px;
+}
+
+.pricing__plans-box .plan-box:last-child {
+  margin-right:0px;
+}
+
+
+@media screen and (max-width:999px) {
+  .pricing__plans-box .plan-box {
+    margin-right:40px;
+  }
+}
+
+@media screen and (max-width:920px) {
+  .pricing__plans-box .plan-box:first-child {
+    display:none;
+  }
+
+  .pricing__plans-box .plan-box:last-child {
+    display:none;
+  }
+
+  .pricing__plans-box .plan-box {
+    margin-right:0px;
+    width:600px;
+    height:250px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .pricing__plans-box .plan-box {
+    width:400px;
+    height:200px;
+  }
+}
+
+@media screen and (max-width:499px) {
+  .pricing__plans-box .plan-box {
+    width:300px;
+    height:150px;
+  }
 }

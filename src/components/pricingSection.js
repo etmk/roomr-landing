@@ -26,6 +26,15 @@ const PricingSection = () => (
         </div>
       </Centrifier>
     </Container>
+    <Container>
+      <Centrifier>
+        <div className="pricing__plans-box">
+          <div className="plan-box"></div>
+          <div className="plan-box"></div>
+          <div className="plan-box"></div>
+        </div>
+      </Centrifier>
+    </Container>
   </div>
 )
 
