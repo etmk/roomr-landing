@@ -1,6 +1,7 @@
 .contact-section {
   background: #fcf2cb;
   color: #1e4363;
+  padding-bottom:50px;
 }
 
 .contact-section .contact-text-box {
@@ -13,4 +14,19 @@
   font-weight:500;
   line-height:25px;
   text-align: center;
+}
+
+.contact-section .contact-social-box {
+  margin-top:40px;
+  display: flex;
+}
+
+.contact-section .contact-social-box img {
+  width:40px;
+  height:40px;
+  margin-right: 90px;
+}
+
+.contact-section .contact-social-box img:last-child {
+  margin-right:0px;
 }
