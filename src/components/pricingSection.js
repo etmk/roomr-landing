@@ -26,8 +26,6 @@ const PricingSection = () => (
           <p>Annually</p>
         </div>
       </Centrifier>
-    </Container>
-    <Container>
       <Centrifier>
         <div className="pricing__plans-box">
           <div className="plan-box"></div>
@@ -35,9 +33,7 @@ const PricingSection = () => (
           <div className="plan-box"></div>
         </div>
       </Centrifier>
-    </Container>
-    <MediaQuery maxWidth={920}>
-      <Container>
+      <MediaQuery maxWidth={920}>
         <Centrifier>
           <div className="pricing__swipe-indicator">
             <div className="indicator-box"></div>
@@ -45,8 +41,8 @@ const PricingSection = () => (
             <div className="indicator-box"></div>
           </div>
         </Centrifier>
-      </Container>
-    </MediaQuery>
+      </MediaQuery>
+    </Container>
   </div>
 )
 

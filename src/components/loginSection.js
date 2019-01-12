@@ -13,8 +13,7 @@ const LoginSection = () => (
       <Centrifier>
         <div className="login-box"></div>
       </Centrifier>
-    </Container>
-    <Container>
+    
       <Centrifier>
         <div className="info-text-box">
           <p>Choose a plan once you are signed up.</p>
