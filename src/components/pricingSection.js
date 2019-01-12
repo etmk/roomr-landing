@@ -1,5 +1,4 @@
 import React from 'react';
-import MediaQuery from 'react-responsive';
 
 import Container from './container';
 import Centrifier from './centrifier';
