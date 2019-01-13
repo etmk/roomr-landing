@@ -11,7 +11,17 @@ const LoginSection = () => (
     <SectionHeader isBlue text="Sign up/Login" smallLine="240px" bigLine="320px" />
     <Container>
       <Centrifier>
-        <div className="login-box"></div>
+        <div className="login-box">
+          <div className="tabs-box">
+            <div className="tab--signup">Sign up</div>
+            <div className="tab--login">Login</div>
+          </div>
+          <div className="form-box">
+            <div className="email-box">email...</div>
+            <div className="password-box">password...</div>
+            <div className="signup-box">sign up</div>
+          </div>
+        </div>
       </Centrifier>
     
       <Centrifier>
