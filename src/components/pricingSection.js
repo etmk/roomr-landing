@@ -109,9 +109,21 @@ class PricingSection extends Component {
           <MediaQuery maxWidth={920}>
             <Centrifier>
               <div className="pricing__swipe-indicator">
-                <div onClick={this.onIndicatorClick} name="0" className="indicator-box"></div>
-                <div onClick={this.onIndicatorClick} name="1" className="indicator-box"></div>
-                <div onClick={this.onIndicatorClick} name="2" className="indicator-box"></div>
+                <div
+                  onClick={this.onIndicatorClick}
+                  name="0"
+                  className={`indicator-box ${(this.state.plan===0) ? "active" : null}`}>
+                </div>
+                <div
+                  onClick={this.onIndicatorClick}
+                  name="1"
+                  className={`indicator-box ${(this.state.plan===1) ? "active" : null}`}>
+                </div>
+                <div
+                  onClick={this.onIndicatorClick}
+                  name="2"
+                  className={`indicator-box ${(this.state.plan===2) ? "active" : null}`}>
+                </div>
               </div>
             </Centrifier>
           </MediaQuery>
