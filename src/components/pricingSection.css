@@ -126,13 +126,6 @@
 }
 
 @media screen and (max-width:920px) {
-  .pricing__plans-box .plan-box:first-child {
-    display:none;
-  }
-
-  .pricing__plans-box .plan-box:last-child {
-    display:none;
-  }
 
   .pricing__plans-box .plan-box {
     margin-right:0px;
