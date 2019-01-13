@@ -31,6 +31,12 @@ const PricingSection = () => (
           <div className="plan-box">
             <p className="plan-name" >Basic</p>
             <p className="plan-price" >2$/room</p>
+            <p className="plan-per-month">per month</p>
+            <p>minimum 1 room</p>
+            <p className="plan-includes">Includes:</p>
+            <p className="plan-feature">block and unblock rooms</p>
+            <p className="plan-feature">access on any device</p>
+            <p className="plan-feature">unlimited members & admins</p>
           </div>
           <div className="plan-box">
             <p className="plan-name" >Pro</p>
