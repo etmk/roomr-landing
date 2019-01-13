@@ -5,6 +5,11 @@
   top:0;
   width:100%;
   z-index: 1;
+  transition: .3s ease-in-out;
+}
+
+.header-shadow {
+  box-shadow: 0 1px 4px 0px rgba(0,0,0,0.5);
 }
 
 .header-content-box {
