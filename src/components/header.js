@@ -14,13 +14,10 @@ class Header extends Component {
 
   navFunction = () => {
     const prevScrollpos = this.state.prevScrollpos;
-    const maxScroll = document.body.clientHeight - window.innerHeight;
     let currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById('navbar');
     if (
-        (maxScroll > 0 && prevScrollpos > currentScrollPos && prevScrollpos <= maxScroll) 
-      || (maxScroll <= 0 && prevScrollpos > currentScrollPos)
-      || (prevScrollpos <= 0 && currentScrollPos <= 0)
+        (prevScrollpos > currentScrollPos) 
       ) {
       navbar.style.top = "0";
     } else if (window.scrollY > 70) {
