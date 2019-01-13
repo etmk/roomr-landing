@@ -34,10 +34,10 @@ const FeatureSection = () => (
             <div className="feature-box__card card--device">
               <MediaQuery minWidth={601}>
                 <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
-                <p>Work on<br></br>every device</p>
+                <p>Works on<br></br>every device</p>
               </MediaQuery>
               <MediaQuery maxWidth={600}>
-                <p>Work on every device</p>
+                <p>Works on every device</p>
               </MediaQuery>
               <img className="device-icon" src={everyDevice} alt="works on every device"/>
             </div>
