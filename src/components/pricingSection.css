@@ -24,6 +24,7 @@
   margin-left:20px;
   margin-right:20px;
   margin-top:3px;
+  cursor: pointer;
 }
 
 .pricing__toggle-box .toggle-foreground {
@@ -36,7 +37,7 @@
   transition: .3s ease-in-out;
 }
 
-.pricing__toggle-box .toggle-background:hover .toggle-foreground {
+.pricing__toggle-box .toggle-background .right {
   transform: translateX(27px);
 }
 
