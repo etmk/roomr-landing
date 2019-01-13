@@ -92,6 +92,40 @@
     margin-top:50px;
   }
 
+  .login-section .login-box .tabs-box {
+    font-size:14px;
+  }
+
+  .login-section .login-box .tabs-box .tab--login {
+    height:20px;
+  }
+
+  .login-section .login-box .tabs-box .tab--signup {
+    height:20px;
+  }
+
+  .login-section .login-box .form-box {
+    width:150px;
+    margin-top:17px;
+    font-size:12px;
+  }
+
+  .login-section .login-box .form-box div {
+    height:30px;
+  }
+
+  .login-section .login-box .form-box .email-box {
+    padding-top:7px;
+  }
+
+  .login-section .login-box .form-box .password-box {
+    padding-top:7px;
+  }
+
+  .login-section .login-box .form-box .signup-box {
+    padding-top:5px;
+  }
+
   .login-section .info-text-box p {
     font-size:12px;
   }
