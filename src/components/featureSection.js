@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 import Container from './container';
 import Centrifier from './centrifier';
@@ -21,34 +22,64 @@ const FeatureSection = () => (
       <div className="feature-box">
           <div className="feature-box__row">
             <div className="feature-box__card card--book">
-              <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
-              <p>Book and<br></br>unbook rooms</p>
+              <MediaQuery minWidth={601}>
+                <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
+                <p>Book and<br></br>unbook rooms</p>
+              </MediaQuery>
+              <MediaQuery maxWidth={600}>
+                <p>Book and unbook rooms</p>
+              </MediaQuery>
               <img className="schedule-icon" src={book} alt="book and unbook icon"/>
             </div>
             <div className="feature-box__card card--device">
-              <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
-              <p>Works on<br></br>every device</p>
+              <MediaQuery minWidth={601}>
+                <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
+                <p>Work on<br></br>every device</p>
+              </MediaQuery>
+              <MediaQuery maxWidth={600}>
+                <p>Work on every device</p>
+              </MediaQuery>
               <img className="device-icon" src={everyDevice} alt="works on every device"/>
             </div>
             <div className="feature-box__card card--people">
-              <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
-              <p>Admin and<br></br>member accounts</p>
+              <MediaQuery minWidth={601}>
+                <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
+                <p>Admin and<br></br>member accounts</p>
+              </MediaQuery>
+              <MediaQuery maxWidth={600}>
+                <p>Admin and member accounts</p>
+              </MediaQuery>
               <img className="people-icon" src={people} alt="member and admin accounts"/>
             </div>
           
             <div className="feature-box__card card--sync">
-              <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
-              <p>Calendar<br></br>integrations</p>
+              <MediaQuery minWidth={601}>
+                <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
+                <p>Calendar<br></br>integrations</p>
+              </MediaQuery>
+              <MediaQuery maxWidth={600}>
+                <p>Calendar integrations</p>
+              </MediaQuery>
               <img className="schedule-icon" src={calendarSync} alt="calendar integrations"/>
             </div>
             <div className="feature-box__card card--analytics">
-              <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
-              <p>Usage<br></br>analytics</p>
+              <MediaQuery minWidth={601}>
+                <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
+                <p>Usage<br></br>analytics</p>
+              </MediaQuery>
+              <MediaQuery maxWidth={600}>
+                <p>Usage analytics</p>
+              </MediaQuery>
               <img className="analytics-icon" src={analytics} alt="usage analytics"/>
             </div>
             <div className="feature-box__card card--key">
-              <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
-              <p>SAML single<br></br>sign-on</p>
+              <MediaQuery minWidth={601}>
+                <img className="feature-triangle" src={triangle} alt="feature-triangle"/>
+                <p>SAML single<br></br>sign-on</p>
+              </MediaQuery>
+              <MediaQuery maxWidth={600}>
+                <p>SAML single sign-on</p>
+              </MediaQuery>
               <img className="key-icon" src={key} alt="SAML single sign-on"/>
             </div>
           </div>

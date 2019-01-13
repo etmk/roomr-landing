@@ -3,14 +3,6 @@
   background: #1e4363;
 }
 
-.feature-section p {
-  color: #fcf2cb;
-  font-weight:100;
-  font-size:20px;
-  text-align: center;
-  cursor: default;
-}
-
 .feature-box {
   margin-top:60px;
 }
@@ -26,6 +18,20 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+}
+
+.feature-box__card p {
+  color: #fcf2cb;
+  font-weight:100;
+  font-size:20px;
+  text-align: center;
+  cursor: default;
+}
+
+.feature-triangle{
+  height:25px;
+  width:25px;
+  margin-bottom:30px;
 }
 
 .card--book {
@@ -48,12 +54,6 @@
 
 .card--key {
   margin-top: 60px;
-}
-
-.feature-triangle{
-  height:25px;
-  width:25px;
-  margin-bottom:30px;
 }
 
 .schedule-icon {
@@ -104,11 +104,12 @@
 }
 
 @media screen and (max-width: 930px) {
-  .card--device {
-    margin-right:0px;
-  }
   .feature-box__row{
     width:500px;
+  }
+
+  .card--device {
+    margin-right:0px;
   }
 
   .card--people {
@@ -124,63 +125,150 @@
 
 @media screen and (max-width: 600px) {
   .feature-section {
-    padding-bottom:30px;
+    padding-bottom:50px;
   }
+
   .feature-box {
-    margin-top:50px;
+    margin-top:40px;
   }
-  .feature-triangle {
-    margin-bottom:15px;
+
+  .feature-box__row{
+    width:325px;
   }
+
+  .feature-box__card {
+    width:325px;
+    flex-direction: row-reverse;
+  }
+
+  .feature-box__card p {
+    font-size:16px;
+  }
+
   .card--book {
     margin-right:0px;
   }
 
   .card--device {
-    margin-top:50px;
+    margin-top:40px;
   }
 
   .card--people {
-    margin-top:50px;
+    margin-top:40px;
     margin-right:0px;
   }
 
+  .card--sync {
+    margin-top:40px;
+  }
+
   .card--analytics {
-    margin-top:50px;
+    margin-top:40px;
     margin-right:0px;
   }
   
   .card--key {
-    margin-top:50px;
-  }
-
-  .feature-box__row{
-    width:200px;
+    margin-top:40px;
   }
 
   .schedule-icon {
-    margin-top:25px;
-    width:100px;
+    margin-top:0px;
+    width:40px;
+    margin-right:75px;
   }
 
   .device-icon {
-    margin-top:30px;
-    width:120px;
+    margin-top:0px;
+    width:52px;
+    margin-right:76px;
   }
 
   .people-icon {
-    margin-top:25px;
-    width:115px;
+    margin-top:0px;
+    width:45px;
+    margin-right:33px;
   }
 
   .analytics-icon {
-    margin-top:30px;
-    width:120px;
+    margin-top:0px;
+    width:43px;
+    margin-right:128px;
   }
 
   .key-icon {
+    margin-top:0px;
+    width:35px;
+    margin-right:93px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .feature-section {
+    padding-bottom:35px;
+  }
+
+  .feature-box {
     margin-top:30px;
-    width:100px;
+  }
+
+  .feature-box__row{
+    width:250px;
+  }
+
+  .feature-box__card {
+    width:250px;
+  }
+
+  .feature-box__card p {
+    font-size:13px;
+  }
+
+  .card--book {
+    margin-right:0px;
+  }
+
+  .card--device {
+    margin-top:30px;
+  }
+
+  .card--people {
+    margin-top:30px;
+  }
+
+  .card--sync {
+    margin-top:30px;
+  }
+
+  .card--analytics {
+    margin-top:30px;
   }
   
+  .card--key {
+    margin-top:30px;
+  }
+
+  .schedule-icon {
+    margin-right:51px;
+    width:30px;
+  }
+
+  .device-icon {
+    width:40px;
+    margin-right:52px;
+  }
+
+  .people-icon {
+    width:35px;
+    margin-right:16px;
+  }
+
+  .analytics-icon {
+    width:35px;
+    margin-right:93px;
+  }
+
+  .key-icon {
+    width:30px;
+    margin-right:65px;
+  }
 }
