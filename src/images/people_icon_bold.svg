@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="38" viewBox="0 0 46 38">
+  <defs>
+    <filter id="people_icon_bold-a" width="137.5%" height="146.9%" x="-18.8%" y="-23.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="#1E4363" stroke="#FCF2CB" filter="url(#people_icon_bold-a)" transform="translate(3 2)">
+    <path stroke-linecap="square" d="M11.2008394,28.8 C11.1269816,21.3333333 15.926853,17.6 25.6004537,17.6 C40.1108547,17.6 40,28.8 40,28.8 C40,28.8 30.4002798,28.8 11.2008394,28.8 Z"/>
+    <path stroke-linecap="square" d="M0.000839446886,32 C-0.0730184062,24.5333333 4.726853,20.8 14.4004537,20.8 C28.9108547,20.8 28.8,32 28.8,32 C28.8,32 19.2002798,32 0.000839446886,32 Z"/>
+    <ellipse cx="25.6" cy="8.8" rx="8" ry="8.8"/>
+    <ellipse cx="14.4" cy="12" rx="8" ry="8.8"/>
+  </g>
+</svg>

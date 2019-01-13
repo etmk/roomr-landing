@@ -143,6 +143,7 @@
 
   .feature-box__card p {
     font-size:16px;
+    font-weight:400;
   }
 
   .card--book {
@@ -174,7 +175,7 @@
   .schedule-icon {
     margin-top:0px;
     width:40px;
-    margin-right:75px;
+    margin-right:77px;
   }
 
   .device-icon {
@@ -186,7 +187,7 @@
   .people-icon {
     margin-top:0px;
     width:45px;
-    margin-right:33px;
+    margin-right:35px;
   }
 
   .analytics-icon {
@@ -259,7 +260,7 @@
 
   .people-icon {
     width:35px;
-    margin-right:16px;
+    margin-right:18px;
   }
 
   .analytics-icon {

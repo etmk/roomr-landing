@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="50" viewBox="0 0 46 50">
+  <defs>
+    <filter id="book_and_unbook_bold-a" width="137.5%" height="134.1%" x="-18.8%" y="-17%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" stroke="#FCF2CB" filter="url(#book_and_unbook_bold-a)" transform="translate(3 2)">
+    <path d="M3.87596899,4 C1.73533043,4 0,5.69589109 0,7.78787879 L0,38.7114988 C0,40.5303106 1.32279621,42.0923788 3.15106664,42.4325412 C8.76752744,43.4775255 14.3837973,44 20,44 C25.616203,44 31.2324732,43.4775255 36.8489343,42.4325409 C38.6772037,42.0923779 39.9999991,40.5303103 39.9999991,38.7114997 L40,7.78787879 C40,5.69589109 38.2646695,4 36.124031,4 L3.87596899,4 Z"/>
+    <path stroke-linecap="square" d="M28 0L28 6M12 0L12 6M32 10L8 10M30 20C22.5818182 28 18.8727273 32 18.8727273 32 18.8727273 32 16.7658478 30.257468 12.5520889 26.7724044 12.4319706 26.6730584 12.2479409 26.5208534 12 26.3157895"/>
+  </g>
+</svg>
