@@ -34,8 +34,21 @@
   text-align: center;
 }
 
+.sourcecode-section .sourcecode-content-box .github-box a {
+  text-decoration: none;
+  color: #fcf2cb;
+}
+
 .sourcecode-section .sourcecode-content-box .github-box:first-child{
   margin-right:180px;
+}
+
+.sourcecode-section .sourcecode-content-box .github-box a img {
+  transition: .3s ease-in-out;
+}
+
+.sourcecode-section .sourcecode-content-box .github-box:hover a img{
+  transform: scale(1.1);
 }
 
 @media screen and (max-width:600px) {

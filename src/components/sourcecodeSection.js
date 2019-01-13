@@ -24,14 +24,16 @@ const SourcecodeSection = () => (
           <div className="github-box">
           <a rel="noopener noreferrer" target="_blank" href="https://github.com/paul-schaaf/roomr">
             <img alt="github logo" src={githubLogo} />
-          </a>
             <p>Roomr App</p>
+          </a>
+            
           </div>
           <div className="github-box">
             <a rel="noopener noreferrer" target="_blank" href="https://github.com/paul-schaaf/roomr-landing">
               <img alt="github logo" src={githubLogo} />
+              <p>Roomr Landing</p>
             </a>
-            <p>Roomr Landing</p>
+            
           </div>
         </div>
       </Centrifier>
