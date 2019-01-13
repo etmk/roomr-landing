@@ -29,7 +29,7 @@ class Header extends Component {
   
 
   render () {
-    if(window !== undefined) {
+    if(typeof window !== undefined) {
       return (
         <div
         className={`header-box ${(window.scrollY > 70) ? "header-shadow" : null}`}
