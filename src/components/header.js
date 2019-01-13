@@ -29,39 +29,40 @@ class Header extends Component {
   
 
   render () {
-    return (
-      <div
-      className={`header-box ${(window.scrollY > 70) ? "header-shadow" : null}`}
-      id="navbar"
-      >
-        <Container>
-          <div className="header-content-box">
-            <h1>
-              {this.props.siteTitle}
-            </h1>
-            <MediaQuery minWidth={1088}>
-              <div className="navbar-links-box">
-                <p>Features</p>
-                <p>Pricing</p>
-                <p>Testimonials</p>
-                <p>Sign up/Login</p>
-                <p>Sourcecode</p>
-                <p>Contact</p>
-              </div>
-            </MediaQuery>
-            <MediaQuery maxWidth={1087}>
-              <div className="hamburger-menu">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </MediaQuery>
-          </div>
-        </Container>
-      </div>
-    )
+    if(window !== undefined) {
+      return (
+        <div
+        className={`header-box ${(window.scrollY > 70) ? "header-shadow" : null}`}
+        id="navbar"
+        >
+          <Container>
+            <div className="header-content-box">
+              <h1>
+                {this.props.siteTitle}
+              </h1>
+              <MediaQuery minWidth={1088}>
+                <div className="navbar-links-box">
+                  <p>Features</p>
+                  <p>Pricing</p>
+                  <p>Testimonials</p>
+                  <p>Sign up/Login</p>
+                  <p>Sourcecode</p>
+                  <p>Contact</p>
+                </div>
+              </MediaQuery>
+              <MediaQuery maxWidth={1087}>
+                <div className="hamburger-menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </MediaQuery>
+            </div>
+          </Container>
+        </div>
+      )
+    }
   }
-  
 }
 
 Header.propTypes = {
