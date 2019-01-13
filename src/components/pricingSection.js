@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
+import Swipeable from 'react-swipeable'
 
 import Container from './container';
 import Centrifier from './centrifier';
@@ -24,7 +25,6 @@ class PricingSection extends Component {
     window.removeEventListener("resize", this.updateWidth);
   }
 
-
   updateWidth = () => {
     this.setState({ width: window.innerWidth });
   }
@@ -35,6 +35,18 @@ class PricingSection extends Component {
   onIndicatorClick = event => {
     const number = parseInt(event.target.getAttribute('name'));
     this.setState({ plan: number});
+  }
+
+  onSwipedLeft = () => {
+    if(this.state.plan !==2) {
+      this.setState(prevState => ({ plan: prevState.plan + 1}))
+    }
+  }
+
+  onSwipedRight = () => {
+    if(this.state.plan !== 0) {
+      this.setState(prevState => ({ plan: prevState.plan - 1}))
+    }
   }
 
   render () {
@@ -60,51 +72,56 @@ class PricingSection extends Component {
             </div>
           </Centrifier>
           <Centrifier>
-            <div className="pricing__plans-box">
-              {(this.state.plan === 0  || this.state.width > 921) && 
-                <div className="plan-box">
-                  <p className="plan-name" >Basic</p>
-                  <p className="plan-price" >
-                    {(this.state.monthly) ? "3": "2"}$/room
-                  </p>
-                  <p className="plan-per-month">per month</p>
-                  <p>minimum 1 room</p>
-                  <p className="plan-includes">Includes:</p>
-                  <p className="plan-feature">block and unblock rooms</p>
-                  <p className="plan-feature">access on any device</p>
-                  <p className="plan-feature">unlimited members & admins</p>
-                </div>
-              }
-              {(this.state.plan === 1  || this.state.width > 921) && 
-                <div className="plan-box">
-                  <p className="plan-name" >Pro</p>
-                  <p className="plan-price" >
-                  {(this.state.monthly) ? "5": "4"}$/room
-                  </p>
-                  <p className="plan-per-month">per month</p>
-                  <p>minimum 1 room</p>
-                  <p className="plan-includes">Includes:</p>
-                  <p className="plan-feature">all of basic</p>
-                  <p className="plan-feature">calendar integrations</p>
-                  <p className="plan-feature">usage analytics</p>
-                </div>
-              }
-              {(this.state.plan === 2  || this.state.width > 921) && 
-                <div className="plan-box">
-                  <p className="plan-name">Enterprise</p>
-                  <p className="plan-price enterprise-plan" >Contact us</p>
-                  <p className="plan-per-month">per month</p>
-                  <p>minimum 1 room</p>
-                  <p className="plan-includes">Includes:</p>
-                  <p className="plan-feature">all of basic and pro</p>
-                  <p className="plan-feature">slack plugin</p>
-                  <p className="plan-feature">custom booking rules</p>
-                  <p className="plan-feature">SAML single sign-on</p>
-                  <p className="plan-feature">dedicated support team</p>
-                  <p className="plan-feature">custom branding</p>
-                </div>
-              }
-            </div>
+            <Swipeable
+              onSwipedLeft={this.onSwipedLeft}
+              onSwipedRight={this.onSwipedRight}
+            >
+              <div className="pricing__plans-box">
+                {(this.state.plan === 0  || this.state.width > 921) && 
+                  <div className="plan-box">
+                    <p className="plan-name" >Basic</p>
+                    <p className="plan-price" >
+                      {(this.state.monthly) ? "3": "2"}$/room
+                    </p>
+                    <p className="plan-per-month">per month</p>
+                    <p>minimum 1 room</p>
+                    <p className="plan-includes">Includes:</p>
+                    <p className="plan-feature">block and unblock rooms</p>
+                    <p className="plan-feature">access on any device</p>
+                    <p className="plan-feature">unlimited members & admins</p>
+                  </div>
+                }
+                {(this.state.plan === 1  || this.state.width > 921) && 
+                  <div className="plan-box">
+                    <p className="plan-name" >Pro</p>
+                    <p className="plan-price" >
+                    {(this.state.monthly) ? "5": "4"}$/room
+                    </p>
+                    <p className="plan-per-month">per month</p>
+                    <p>minimum 1 room</p>
+                    <p className="plan-includes">Includes:</p>
+                    <p className="plan-feature">all of basic</p>
+                    <p className="plan-feature">calendar integrations</p>
+                    <p className="plan-feature">usage analytics</p>
+                  </div>
+                }
+                {(this.state.plan === 2  || this.state.width > 921) && 
+                  <div className="plan-box">
+                    <p className="plan-name">Enterprise</p>
+                    <p className="plan-price enterprise-plan" >Contact us</p>
+                    <p className="plan-per-month">per month</p>
+                    <p>minimum 1 room</p>
+                    <p className="plan-includes">Includes:</p>
+                    <p className="plan-feature">all of basic and pro</p>
+                    <p className="plan-feature">slack plugin</p>
+                    <p className="plan-feature">custom booking rules</p>
+                    <p className="plan-feature">SAML single sign-on</p>
+                    <p className="plan-feature">dedicated support team</p>
+                    <p className="plan-feature">custom branding</p>
+                  </div>
+                }
+              </div>
+            </Swipeable>
           </Centrifier>
           <MediaQuery maxWidth={920}>
             <Centrifier>
