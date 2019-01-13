@@ -29,10 +29,9 @@ class Header extends Component {
   
 
   render () {
-    if(typeof window !== undefined) {
       return (
         <div
-        className={`header-box ${(window.scrollY > 70) ? "header-shadow" : null}`}
+        className={`header-box ${(window.scrollY > 70)? "header-shadow" : null}`}
         id="navbar"
         >
           <Container>
@@ -61,7 +60,6 @@ class Header extends Component {
           </Container>
         </div>
       )
-    }
   }
 }
 
