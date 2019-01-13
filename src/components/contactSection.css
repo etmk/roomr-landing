@@ -26,10 +26,15 @@
   height:40px;
   margin-right: 90px;
   cursor: pointer;
+  transition: .3s ease-in-out;
 }
 
 .contact-section .contact-social-box img:last-child {
   margin-right:0px;
+}
+
+.contact-section .contact-social-box img:hover {
+  transform:scale(1.2);
 }
 
 @media screen and (max-width:600px) {
