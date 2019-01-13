@@ -25,6 +25,7 @@
   width:40px;
   height:40px;
   margin-right: 90px;
+  cursor: pointer;
 }
 
 .contact-section .contact-social-box img:last-child {
