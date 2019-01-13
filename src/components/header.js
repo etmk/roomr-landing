@@ -6,10 +6,11 @@ import Container from './container';
 import './header.css';
 
 class Header extends Component {
-  state = { prevScrollpos: window.pageYOffset }
+  state = { prevScrollpos: 0}
 
   componentDidMount = async () => {
     window.addEventListener("scroll", this.navFunction);
+    this.setState({ prevScrollpos: window.pageYOffset});
   }
 
   navFunction = () => {
