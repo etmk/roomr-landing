@@ -11,7 +11,7 @@ import './pricingSection.css';
 class PricingSection extends Component {
   state = {
     monthly: true,
-    plan: 1,
+    plan: 0,
     width:''
   }
 
