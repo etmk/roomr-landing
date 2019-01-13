@@ -21,11 +21,12 @@
 .sourcecode-section .sourcecode-content-box {
   margin-top:55px;
   display: flex;
-  cursor: pointer;
+  
 }
 
 .sourcecode-section .sourcecode-content-box .github-box {
   text-align: center;
+  cursor: pointer;
 }
 
 .sourcecode-section .sourcecode-content-box .github-box p{
