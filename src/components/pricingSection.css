@@ -56,6 +56,13 @@
   margin-right:0px;
 }
 
+.pricing__plans-box .plan-box .plan-name{
+  font-weight:700;
+  font-size:18px;
+  margin-left:10px;
+  margin-top:5px;
+}
+
 .pricing__swipe-indicator {
   margin-top:30px;
   display:flex;

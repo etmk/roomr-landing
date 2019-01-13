@@ -28,9 +28,15 @@ const PricingSection = () => (
       </Centrifier>
       <Centrifier>
         <div className="pricing__plans-box">
-          <div className="plan-box"></div>
-          <div className="plan-box"></div>
-          <div className="plan-box"></div>
+          <div className="plan-box">
+            <p className="plan-name" >Basic</p>
+          </div>
+          <div className="plan-box">
+            <p className="plan-name" >Pro</p>
+          </div>
+          <div className="plan-box">
+            <p className="plan-name">Enterprise</p>
+          </div>
         </div>
       </Centrifier>
       <MediaQuery maxWidth={920}>
