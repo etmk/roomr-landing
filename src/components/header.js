@@ -7,7 +7,10 @@ import Container from './container';
 import './header.css';
 
 class Header extends Component {
-  state = { prevScrollpos: 0}
+  state = {
+    prevScrollpos: 0,
+    menuOpen: false
+  }
 
   componentDidMount = async () => {
     window.addEventListener("scroll", this.navFunction);
