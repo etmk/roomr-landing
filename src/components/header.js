@@ -79,7 +79,7 @@ class Header extends Component {
               <MediaQuery maxWidth={1087}>
                 <div 
                   onClick={this.toggleMobileMenu}
-                  className="hamburger-menu"
+                  className="hamburger-menu noSelect"
                 >
                   <div></div>
                   <div></div>
@@ -97,6 +97,7 @@ class Header extends Component {
             }}
           >
             <img
+            className="noSelect"
             onClick={this.toggleMobileMenu}
             alt="mobile menu close button"
             src={closeMenuIcon}
