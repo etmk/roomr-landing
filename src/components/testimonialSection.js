@@ -48,7 +48,15 @@ class TestimonialSection extends Component {
         <Container>
           <Centrifier>
             <div className="testimonial-company">
-              <p>CEO of someCompany Inc.</p>
+              {this.state.testimonial === 0 &&
+                <p>CEO of someCompany Inc.</p>
+              }
+              {this.state.testimonial === 1 &&
+                <p>HR of bigCompany Inc.</p>
+              }
+              {this.state.testimonial === 2 &&
+                <p>COO of thatCompany Inc.</p>
+              }
             </div>
           </Centrifier>
         </Container>
