@@ -39,14 +39,16 @@
   border-radius:2px;
   margin-right:15px;
   opacity:0.5;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.testimonial__swipe-indicator .active {
+  opacity:1;
 }
 
 .testimonial__swipe-indicator .indicator-box:last-child {
   margin-right:0px;
-}
-
-.testimonial__swipe-indicator .indicator-box:first-child {
-  opacity:1;
 }
 
 @media screen and (max-width:900px) {

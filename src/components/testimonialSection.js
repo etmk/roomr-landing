@@ -12,14 +12,14 @@ import triangleRight from '../images/testimonial-triangle-right.svg';
 
 class TestimonialSection extends Component {
   state = {
-    plan: 0
+    testimonial: 0
   }
 
   onIndicatorClick = event => {
     const number = parseInt(event.target.getAttribute('name'));
-    this.setState({ plan: number });
+    this.setState({ testimonial: number });
   }
-  
+
   render () {
     return (
       <div className="testimonial-section">
@@ -46,11 +46,23 @@ class TestimonialSection extends Component {
         </Container>
         <Container>
           <Centrifier>
-          <div className="testimonial__swipe-indicator">
-                <div className="indicator-box"></div>
-                <div className="indicator-box"></div>
-                <div className="indicator-box"></div>
+            <div className="testimonial__swipe-indicator">
+              <div
+                onClick={this.onIndicatorClick}
+                name="0"
+                className={`indicator-box ${(this.state.testimonial===0) ? "active" : null}`}>
               </div>
+              <div
+                onClick={this.onIndicatorClick}
+                name="1"
+                className={`indicator-box ${(this.state.testimonial===1) ? "active" : null}`}>
+              </div>
+              <div
+                onClick={this.onIndicatorClick}
+                name="2"
+                className={`indicator-box ${(this.state.testimonial===2) ? "active" : null}`}>
+              </div>
+            </div>
           </Centrifier>
         </Container>
       </div>
