@@ -13,11 +13,11 @@ class Header extends Component {
   }
 
   componentDidMount = async () => {
-    window.addEventListener("scroll", this.navFunction);
+    window.addEventListener("scroll", this.navbarDisplayHandler);
     this.setState({ prevScrollpos: window.pageYOffset});
   }
 
-  navFunction = () => {
+  navbarDisplayHandler = () => {
     const prevScrollpos = this.state.prevScrollpos;
     let currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById('navbar');
