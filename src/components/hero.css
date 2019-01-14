@@ -72,30 +72,24 @@
 
 @media screen and (max-width: 500px) {
   .hero {
-    padding-left:0px;
     height:450px;
   }
 
   .hero-header-box {
     padding-top:100px;
-    text-align: center;
   }
 
-  .hero-header-box p{
-    font-size:22px;
-    font-weight:700;
-    letter-spacing: 1px;
-    font-family: 'Roboto'
+  .hero-header-box p {
+    font-size: 27px;
   }
 
   .hero-buttons {
-    margin-top:30px;
-    justify-content: center;
+    margin-top:25px;
+    
   }
 
   .hero-buttons p {
     font-size:17px;
     font-weight:500;
-    cursor: pointer;
   }
 }
