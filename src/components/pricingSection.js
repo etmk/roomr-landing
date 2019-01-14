@@ -62,7 +62,7 @@ class PricingSection extends Component {
           <Centrifier>
             <div className="pricing__toggle-box">
               <p>Monthly</p>
-              <div className="toggle-background noSelect" onClick={this.onPriceToggle}>
+              <div className="toggle-background" onClick={this.onPriceToggle}>
                 <div
                   className={`toggle-foreground ${(!this.state.monthly) ? "right" : null}`}
                 >
