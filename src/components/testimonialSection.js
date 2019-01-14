@@ -46,6 +46,7 @@ class TestimonialSection extends Component {
             <div className="testimonial-box">
               <MediaQuery minWidth={700}>
                 <img
+                  className="noSelect"
                   onClick={this.moveLeft}
                   alt="testimonial triangle left"
                   src={triangleLeft}
@@ -67,6 +68,7 @@ class TestimonialSection extends Component {
               </Swipeable>
               <MediaQuery minWidth={700}>
                 <img
+                  className="noSelect"
                   onClick={this.moveRight}
                   alt="testimonial triangle right"
                   src={triangleRight}
