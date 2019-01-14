@@ -92,7 +92,7 @@ class Header extends Component {
         <div
           className="mobile-header"
           style={{
-            "right": (this.state.menuOpen) ? "0px" : "-250px"
+            "right": (this.state.menuOpen) ? "0px" : "-260px"
           }}
         >
         <img
