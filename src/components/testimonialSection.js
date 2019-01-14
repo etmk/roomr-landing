@@ -11,6 +11,9 @@ import triangleLeft from '../images/testimonial-triangle-left.svg';
 import triangleRight from '../images/testimonial-triangle-right.svg';
 
 class TestimonialSection extends Component {
+  state = {
+    plan: 0
+  }
   render () {
     return (
       <div className="testimonial-section">
