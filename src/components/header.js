@@ -41,9 +41,11 @@ class Header extends Component {
       >
         <Container>
           <div className="header-content-box">
+            <Link to="heroSection" spy={true} smooth={true} duration={750} offset={-70}>
             <h1>
               {this.props.siteTitle}
             </h1>
+            </Link>
             <MediaQuery minWidth={1088}>
               <div className="navbar-links-box">
               <Link to="featureSection" spy={true} smooth={true} duration={750} offset={-70}>

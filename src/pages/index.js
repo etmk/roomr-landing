@@ -14,7 +14,10 @@ import ContactSection from '../components/contactSection';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`roomr`, `room management`, `open-source`, `free`]} />
-    <Hero />
+    <Element name="heroSection">
+      <Hero />
+    </Element>
+    
     <Element name="featureSection">
       <FeatureSection />
     </Element>
