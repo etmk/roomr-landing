@@ -104,6 +104,21 @@ class Header extends Component {
             <Link to="featureSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
               <p onClick={this.toggleMobileMenu}>Features</p>
             </Link>
+            <Link to="pricingSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+              <p onClick={this.toggleMobileMenu}>Pricing</p>
+            </Link>
+            <Link to="testimonialSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+              <p onClick={this.toggleMobileMenu}>Testimonials</p>
+            </Link>
+            <Link to="loginSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+              <p onClick={this.toggleMobileMenu}>Sign up/Login</p>
+            </Link>
+            <Link to="sourcecodeSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+              <p onClick={this.toggleMobileMenu}>Sourcecode</p>
+            </Link>
+            <Link to="contactSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+              <p onClick={this.toggleMobileMenu}>Contact</p>
+            </Link>
           </div>
         </MediaQuery>
       </Fragment>
