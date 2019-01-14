@@ -64,9 +64,21 @@
   top:0;
   width:250px;
   height:100%;
-  background: red;
+  background: #fcf2cb;
   z-index: 1;
   transition: .3s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: -1px 0px 4px 0px rgba(0,0,0,0.5);
+}
+
+.mobile-header img {
+  width:32px;
+  margin-top:20px;
+  margin-left:20px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1279px) {

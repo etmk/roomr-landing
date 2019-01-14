@@ -32,8 +32,8 @@ class Header extends Component {
     this.setState(prevState => ({ prevScrollpos: currentScrollPos}));
   }
   
-  onHamburgerClick = () => {
-    this.setState({ menuOpen: true })
+  toggleMobileMenu = () => {
+    this.setState(prevState => ({ menuOpen: !prevState.menuOpen}))
   }
 
   render () {
@@ -78,7 +78,7 @@ class Header extends Component {
               </MediaQuery>
               <MediaQuery maxWidth={1087}>
                 <div 
-                  onClick={this.onHamburgerClick}
+                  onClick={this.toggleMobileMenu}
                   className="hamburger-menu"
                 >
                   <div></div>
@@ -95,7 +95,11 @@ class Header extends Component {
             "right": (this.state.menuOpen) ? "0px" : "-250px"
           }}
         >
-        <img src={closeMenuIcon} />
+        <img
+        onClick={this.toggleMobileMenu}
+        alt="mobile menu close button"
+        src={closeMenuIcon}
+        />
         </div>
       </Fragment>
     )
