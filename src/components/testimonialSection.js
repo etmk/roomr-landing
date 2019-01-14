@@ -14,6 +14,12 @@ class TestimonialSection extends Component {
   state = {
     plan: 0
   }
+
+  onIndicatorClick = event => {
+    const number = parseInt(event.target.getAttribute('name'));
+    this.setState({ plan: number });
+  }
+  
   render () {
     return (
       <div className="testimonial-section">
