@@ -77,7 +77,7 @@ class PricingSection extends Component {
               onSwipedRight={this.onSwipedRight}
             >
               <div className="pricing__plans-box">
-                {(this.state.plan === 0  || this.state.width > 921) && 
+                {(this.state.plan === 0  || this.state.width > 984) && 
                   <div className="plan-box">
                     <p className="plan-name" >Basic</p>
                     <p className="plan-price" >
@@ -91,7 +91,7 @@ class PricingSection extends Component {
                     <p className="plan-feature">unlimited members & admins</p>
                   </div>
                 }
-                {(this.state.plan === 1  || this.state.width > 921) && 
+                {(this.state.plan === 1  || this.state.width > 984) && 
                   <div className="plan-box">
                     <p className="plan-name" >Pro</p>
                     <p className="plan-price" >
@@ -105,7 +105,7 @@ class PricingSection extends Component {
                     <p className="plan-feature">usage analytics</p>
                   </div>
                 }
-                {(this.state.plan === 2  || this.state.width > 921) && 
+                {(this.state.plan === 2  || this.state.width > 984) && 
                   <div className="plan-box">
                     <p className="plan-name">Enterprise</p>
                     <p className="plan-price enterprise-plan" >Contact us</p>
@@ -123,7 +123,7 @@ class PricingSection extends Component {
               </div>
             </Swipeable>
           </Centrifier>
-          <MediaQuery maxWidth={920}>
+          <MediaQuery maxWidth={984}>
             <Centrifier>
               <div className="pricing__swipe-indicator">
                 <div
