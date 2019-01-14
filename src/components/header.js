@@ -89,7 +89,7 @@ class Header extends Component {
             </div>
           </Container>
         </div>
-        <MediaQuery maxWidth={1087}>
+        
           <div
             className="mobile-header"
             style={{
@@ -120,7 +120,7 @@ class Header extends Component {
               <p onClick={this.toggleMobileMenu}>Contact</p>
             </Link>
           </div>
-        </MediaQuery>
+       
       </Fragment>
     )
   }
