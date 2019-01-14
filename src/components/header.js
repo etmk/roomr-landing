@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 
 import Container from './container';
 import './header.css';
+import closeMenuIcon from '../images/close_menu_icon.svg';
 
 class Header extends Component {
   state = {
@@ -94,7 +95,7 @@ class Header extends Component {
             "right": (this.state.menuOpen) ? "0px" : "-250px"
           }}
         >
-        
+        <img src={closeMenuIcon} />
         </div>
       </Fragment>
     )
