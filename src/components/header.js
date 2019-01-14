@@ -89,18 +89,20 @@ class Header extends Component {
             </div>
           </Container>
         </div>
-        <div
-          className="mobile-header"
-          style={{
-            "right": (this.state.menuOpen) ? "0px" : "-260px"
-          }}
-        >
-        <img
-        onClick={this.toggleMobileMenu}
-        alt="mobile menu close button"
-        src={closeMenuIcon}
-        />
-        </div>
+        <MediaQuery maxWidth={1087}>
+          <div
+            className="mobile-header"
+            style={{
+              "right": (this.state.menuOpen) ? "0px" : "-260px"
+            }}
+          >
+          <img
+          onClick={this.toggleMobileMenu}
+          alt="mobile menu close button"
+          src={closeMenuIcon}
+          />
+          </div>
+        </MediaQuery>
       </Fragment>
     )
   }
