@@ -41,29 +41,29 @@ class Header extends Component {
       >
         <Container>
           <div className="header-content-box">
-            <Link to="heroSection" spy={true} smooth={true} duration={750} offset={-70}>
+            <Link to="heroSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
             <h1>
               {this.props.siteTitle}
             </h1>
             </Link>
             <MediaQuery minWidth={1088}>
               <div className="navbar-links-box">
-              <Link to="featureSection" spy={true} smooth={true} duration={750} offset={-70}>
+              <Link to="featureSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
                 <p>Features</p>
               </Link>
-              <Link to="pricingSection" spy={true} smooth={true} duration={750} offset={-70}>
+              <Link to="pricingSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
                 <p>Pricing</p>
               </Link>
-              <Link to="testimonialSection" spy={true} smooth={true} duration={750} offset={-70}>
+              <Link to="testimonialSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
                 <p>Testimonials</p>
               </Link>
-              <Link to="loginSection" spy={true} smooth={true} duration={750} offset={-70}>
+              <Link to="loginSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
                 <p>Sign up/Login</p>
               </Link>
-              <Link to="sourcecodeSection" spy={true} smooth={true} duration={750} offset={-70}>
+              <Link to="sourcecodeSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
                 <p>Sourcecode</p>
               </Link>
-              <Link to="contactSection" spy={true} smooth={true} duration={750} offset={-70}>
+              <Link to="contactSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
                 <p>Contact</p>
               </Link>
               </div>
