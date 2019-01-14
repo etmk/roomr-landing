@@ -57,7 +57,7 @@ class Header extends Component {
               <MediaQuery minWidth={1088}>
                 <div className="navbar-links-box">
                 <Link to="featureSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-                  <p>Features</p>
+                  <p>Testchange</p>
                 </Link>
                 <Link to="pricingSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
                   <p>Pricing</p>
