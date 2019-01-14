@@ -31,6 +31,9 @@ class Header extends Component {
     this.setState(prevState => ({ prevScrollpos: currentScrollPos}));
   }
   
+  onHamburgerClick = () => {
+    this.setState({ menuOpen: true })
+  }
 
   render () {
     let scrollY = 0;
@@ -73,7 +76,10 @@ class Header extends Component {
                 </div>
               </MediaQuery>
               <MediaQuery maxWidth={1087}>
-                <div className="hamburger-menu">
+                <div 
+                  onClick={this.onHamburgerClick}
+                  className="hamburger-menu"
+                >
                   <div></div>
                   <div></div>
                   <div></div>
@@ -82,7 +88,12 @@ class Header extends Component {
             </div>
           </Container>
         </div>
-        <div className="mobile-header">
+        <div
+          className="mobile-header"
+          style={{
+            "right": (this.state.menuOpen) ? "0px" : "-250px"
+          }}
+        >
         
         </div>
       </Fragment>
