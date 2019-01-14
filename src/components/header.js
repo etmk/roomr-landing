@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import MediaQuery from 'react-responsive';
+import { Link } from 'react-scroll';
 
 import Container from './container';
 import './header.css';
@@ -45,12 +46,24 @@ class Header extends Component {
             </h1>
             <MediaQuery minWidth={1088}>
               <div className="navbar-links-box">
+              <Link to="featureSection" spy={true} smooth={true} duration={750} offset={-70}>
                 <p>Features</p>
+              </Link>
+              <Link to="pricingSection" spy={true} smooth={true} duration={750} offset={-70}>
                 <p>Pricing</p>
+              </Link>
+              <Link to="testimonialSection" spy={true} smooth={true} duration={750} offset={-70}>
                 <p>Testimonials</p>
+              </Link>
+              <Link to="loginSection" spy={true} smooth={true} duration={750} offset={-70}>
                 <p>Sign up/Login</p>
+              </Link>
+              <Link to="sourcecodeSection" spy={true} smooth={true} duration={750} offset={-70}>
                 <p>Sourcecode</p>
+              </Link>
+              <Link to="contactSection" spy={true} smooth={true} duration={750} offset={-70}>
                 <p>Contact</p>
+              </Link>
               </div>
             </MediaQuery>
             <MediaQuery maxWidth={1087}>
