@@ -14,6 +14,17 @@ class Header extends Component {
   }
 
   componentDidMount = async () => {
+    window.addEventListener('click', event => {
+      console.log(event.target);
+      const name = event.target.getAttribute('name');
+      if(name !== 'mobileHeader' && this.state.menuOpen === true) {
+        this.toggleMobileMenu();
+      }
+
+      if(name !== 'mobileHeader' && name === 'hamburgerMenu') {
+        this.toggleMobileMenu();
+      }
+    })
     window.addEventListener("scroll", this.navbarDisplayHandler);
     this.setState({ prevScrollpos: window.pageYOffset});
   }
@@ -78,12 +89,12 @@ class Header extends Component {
               </MediaQuery>
               <MediaQuery maxWidth={1087}>
                 <div 
-                  onClick={this.toggleMobileMenu}
+                  name="hamburgerMenu"
                   className="hamburger-menu"
                 >
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div name="hamburgerMenu"></div>
+                  <div name="hamburgerMenu"></div>
+                  <div name="hamburgerMenu"></div>
                 </div>
               </MediaQuery>
             </div>
@@ -91,13 +102,13 @@ class Header extends Component {
         </div>
         
           <div
+            name="mobileHeader"
             className="mobile-header"
             style={{
               "right": (this.state.menuOpen) ? "0px" : "-260px"
             }}
           >
             <img
-            onClick={this.toggleMobileMenu}
             alt="mobile menu close button"
             src={closeMenuIcon}
             />
