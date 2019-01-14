@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-scroll';
 
@@ -35,49 +35,54 @@ class Header extends Component {
       scrollY = window.scrollY;
     }
     return (
-      <div
-      className={`header-box ${(scrollY > 70)? "header-shadow" : null}`}
-      id="navbar"
-      >
-        <Container>
-          <div className="header-content-box">
-            <Link to="heroSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-            <h1>
-              {this.props.siteTitle}
-            </h1>
-            </Link>
-            <MediaQuery minWidth={1088}>
-              <div className="navbar-links-box">
-              <Link to="featureSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-                <p>Features</p>
+      <Fragment>
+        <div
+        className={`header-box ${(scrollY > 70)? "header-shadow" : null}`}
+        id="navbar"
+        >
+          <Container>
+            <div className="header-content-box">
+              <Link to="heroSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+              <h1>
+                {this.props.siteTitle}
+              </h1>
               </Link>
-              <Link to="pricingSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-                <p>Pricing</p>
-              </Link>
-              <Link to="testimonialSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-                <p>Testimonials</p>
-              </Link>
-              <Link to="loginSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-                <p>Sign up/Login</p>
-              </Link>
-              <Link to="sourcecodeSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-                <p>Sourcecode</p>
-              </Link>
-              <Link to="contactSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-                <p>Contact</p>
-              </Link>
-              </div>
-            </MediaQuery>
-            <MediaQuery maxWidth={1087}>
-              <div className="hamburger-menu">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </MediaQuery>
-          </div>
-        </Container>
-      </div>
+              <MediaQuery minWidth={1088}>
+                <div className="navbar-links-box">
+                <Link to="featureSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+                  <p>Features</p>
+                </Link>
+                <Link to="pricingSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+                  <p>Pricing</p>
+                </Link>
+                <Link to="testimonialSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+                  <p>Testimonials</p>
+                </Link>
+                <Link to="loginSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+                  <p>Sign up/Login</p>
+                </Link>
+                <Link to="sourcecodeSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+                  <p>Sourcecode</p>
+                </Link>
+                <Link to="contactSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+                  <p>Contact</p>
+                </Link>
+                </div>
+              </MediaQuery>
+              <MediaQuery maxWidth={1087}>
+                <div className="hamburger-menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </MediaQuery>
+            </div>
+          </Container>
+        </div>
+        <div className="mobile-header">
+        
+        </div>
+      </Fragment>
     )
   }
 }

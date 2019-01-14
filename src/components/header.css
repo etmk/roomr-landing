@@ -50,6 +50,16 @@
   cursor: pointer;
 }
 
+.mobile-header {
+  position: fixed;
+  top:0;
+  right:0px;
+  width:250px;
+  height:100%;
+  background: red;
+  z-index: 1;
+}
+
 .hamburger-menu div {
   margin-top:4px;
   height: 4px;
