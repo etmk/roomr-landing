@@ -74,10 +74,20 @@
 }
 
 .mobile-header img {
-  width:32px;
+  width:30px;
   margin-top:20px;
-  margin-left:20px;
+  margin-left:30px;
+  margin-bottom:10px;
   cursor: pointer;
+}
+
+.mobile-header p {
+  font-size:22px;
+  font-weight: 500;
+  color: #1e4363;
+  cursor: pointer;
+  margin-top:20px;
+  margin-left:30px;
 }
 
 @media screen and (max-width: 1279px) {
