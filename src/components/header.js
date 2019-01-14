@@ -96,11 +96,14 @@ class Header extends Component {
               "right": (this.state.menuOpen) ? "0px" : "-260px"
             }}
           >
-          <img
-          onClick={this.toggleMobileMenu}
-          alt="mobile menu close button"
-          src={closeMenuIcon}
-          />
+            <img
+            onClick={this.toggleMobileMenu}
+            alt="mobile menu close button"
+            src={closeMenuIcon}
+            />
+            <Link to="featureSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
+              <p onClick={this.toggleMobileMenu}>Features</p>
+            </Link>
           </div>
         </MediaQuery>
       </Fragment>
