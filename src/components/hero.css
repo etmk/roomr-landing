@@ -1,6 +1,6 @@
 .hero {
   margin-top:70px;
-  height: 600px;
+  height: 620px;
   width:100vw;
   background: #fcf2cb;
   color: #1e4363;
@@ -8,7 +8,7 @@
 }
 
 .hero-header-box {
-  padding-top:130px;
+  padding-top:140px;
 }
 
 .hero-header-box p{
