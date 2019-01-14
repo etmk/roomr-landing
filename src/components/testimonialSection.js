@@ -20,6 +20,22 @@ class TestimonialSection extends Component {
     this.setState({ testimonial: number });
   }
 
+  onTriangleRightClick = event => {
+    if (this.state.testimonial === 2) {
+      this.setState({ testimonial: 0 });
+    } else {
+      this.setState(prevState => ({ testimonial: prevState.testimonial + 1 }));
+    }
+  }
+
+  onTriangleLeftClick = event => {
+    if (this.state.testimonial === 0) {
+      this.setState({ testimonial: 2 });
+    } else {
+      this.setState(prevState => ({ testimonial: prevState.testimonial -1 }));
+    }
+  }
+
   render () {
     return (
       <div className="testimonial-section">
@@ -28,7 +44,11 @@ class TestimonialSection extends Component {
           <Centrifier>
             <div className="testimonial-box">
               <MediaQuery minWidth={700}>
-                <img alt="testimonial triangle left" src={triangleLeft}/>
+                <img
+                  onClick={this.onTriangleLeftClick}
+                  alt="testimonial triangle left"
+                  src={triangleLeft}
+                />
               </MediaQuery>
               {this.state.testimonial === 0 &&
                 <p className="testimonial">We used to spend loads of time looking for rooms. Additionally, workers looking for rooms would interrupt meetings because they were not sure whether a room was vacant or not. Roomr helped us find rooms more quickly and made sure everyone was informed at all times.</p>
@@ -40,7 +60,11 @@ class TestimonialSection extends Component {
                 <p className="testimonial">We chose roomr because the usage analytics are just so helpful. We can quickly observe which rooms are used most and at what times. On top of that, the calendar integration automatically reminds everyone so forgotten meetings are now a thing of the past for us! </p>
               }
               <MediaQuery minWidth={700}>
-                <img alt="testimonial triangle right" src={triangleRight}/>
+                <img
+                  onClick={this.onTriangleRightClick}
+                  alt="testimonial triangle right"
+                  src={triangleRight}
+                />
               </MediaQuery>
             </div>
           </Centrifier>
