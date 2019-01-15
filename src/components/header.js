@@ -39,7 +39,7 @@ class Header extends Component {
     } else if (window.scrollY > 70) {
       navbar.style.top = "-80px";
     }
-    this.setState(prevState => ({ prevScrollpos: currentScrollPos}));
+    this.setState({ prevScrollpos: currentScrollPos });
   }
   
   toggleMobileMenu = () => {
@@ -60,7 +60,7 @@ class Header extends Component {
           <Container>
             <div className="header-content-box">
               <Link to="heroSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-              <h1>
+              <h1 >
                 {this.props.siteTitle}
               </h1>
               </Link>
