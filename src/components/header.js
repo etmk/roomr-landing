@@ -15,7 +15,6 @@ class Header extends Component {
 
   componentDidMount = async () => {
     window.addEventListener('click', event => {
-      console.log(event.target);
       const name = event.target.getAttribute('name');
       if(name !== 'mobileHeader' && this.state.menuOpen === true) {
         this.toggleMobileMenu();
