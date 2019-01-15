@@ -46,6 +46,10 @@ class Header extends Component {
     this.setState(prevState => ({ menuOpen: !prevState.menuOpen}))
   }
 
+  onRoomrClick = () => {
+    this.setState({ menuOpen: false });
+  }
+
   render () {
     let scrollY = 0;
     if (typeof window !== 'undefined') {
@@ -60,7 +64,7 @@ class Header extends Component {
           <Container>
             <div className="header-content-box">
               <Link to="heroSection" spy={true} smooth={'easeInOutCubic'} duration={750} offset={-70}>
-              <h1 >
+              <h1 onClick={this.onRoomrClick}>
                 {this.props.siteTitle}
               </h1>
               </Link>
