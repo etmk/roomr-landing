@@ -24,56 +24,48 @@
   cursor: pointer;
 }
 
-.login-section .login-box .tabs-box .tab--signup {
+.login-section .login-box .tabs-box div {
+  text-align: center;
   padding-top:15px;
   padding-bottom:15px;
   width:50%;
-  text-align: center;
-}
-
-.login-section .login-box .tabs-box .tab--login {
-  padding-top:15px;
-  padding-bottom:15px;
-  width:50%;
-  text-align: center;
-  background: #152F45;
+  transition:.3s ease-in-out;
 }
 
 .login-section .login-box .form-box {
   text-align: center;
   color: #152F45;
   width:180px;
-  margin-top:45px;
   font-size:13px;
+}
+
+.login-section .login-box .form-box--signup {
+  margin-top:45px;
+}
+
+.login-section .login-box .form-box--login {
+  margin-top:16px;
 }
 
 .login-section .login-box .form-box div {
   height:40px;
   margin-top:20px;
   box-sizing: border-box;
-  padding-top:10px;
+  padding-top:11px;
   border-radius: 3px;
-}
-
-.login-section .login-box .form-box .email-box {
-  cursor: text;
   background:white;
-  text-align: left;
-}
-
-.login-section .login-box .form-box .password-box {
-  cursor: text;
-  background:white;
+  cursor:text;
   text-align: left;
 }
 
 .login-section .login-box .form-box .signup-box {
   border:1px solid white;
+  background: #1e4363;
   color:white;
   padding-top:9px;
   cursor: pointer;
+  text-align: center;
 }
-
 
 .login-section .info-text-box p{
   font-size:14px;
@@ -87,7 +79,7 @@
   }
 
   .login-section .login-box {
-    height:250px;
+    height:280px;
     width:250px;
     margin-top:50px;
   }
@@ -106,12 +98,20 @@
 
   .login-section .login-box .form-box {
     width:150px;
-    margin-top:17px;
     font-size:12px;
+  }
+
+  .login-section .login-box .form-box--signup {
+    margin-top:30px;
+  }
+
+  .login-section .login-box .form-box--login {
+    margin-top:7px;
   }
 
   .login-section .login-box .form-box div {
     height:30px;
+    padding-top:6px;
   }
 
   .login-section .login-box .form-box .email-box {

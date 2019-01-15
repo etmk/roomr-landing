@@ -8,7 +8,15 @@ import Centrifier from './centrifier';
 
 class LoginSection extends Component {
   state = {
-    tab: 0
+    isSignUp: true
+  }
+
+  onSignupTab = () => {
+    this.setState({ isSignUp: true });
+  }
+
+  onLoginTab = () => {
+    this.setState({ isSignUp: false})
   }
   render () {
     return (
@@ -18,13 +26,30 @@ class LoginSection extends Component {
           <Centrifier>
             <div className="login-box">
               <div className="tabs-box">
-                <div className="tab--signup">Sign up</div>
-                <div className="tab--login">Login</div>
+                <div
+                  onClick={this.onSignupTab}
+                  className="tab--signup"
+                  style={{"background" : (this.state.isSignUp) ? "#1e4363" : "#152F45"}}
+                >
+                  Sign up
+                </div>
+                <div
+                  onClick={this.onLoginTab}
+                  className="tab--login"
+                  style={{"background" : (this.state.isSignUp) ? "#152F45" : "#1e4363"}}
+                >
+                  Login
+                </div>
               </div>
-              <div className="form-box">
-                <div className="email-box">email...</div>
-                <div className="password-box">password...</div>
-                <div className="signup-box">sign up</div>
+              <div
+                className={`form-box ${(this.state.isSignUp) ? "form-box--signup" : "form-box--login"}`}
+              >
+                {(!this.state.isSignUp) && <div className="entity-box">entity...</div>}
+                <div>email...</div>
+                <div>password...</div>
+                <div className="signup-box">
+                  {(this.state.isSignUp) ? "sign up" : "login"}
+                </div>
               </div>
             </div>
           </Centrifier>
