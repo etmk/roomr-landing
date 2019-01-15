@@ -7,6 +7,9 @@ import Container from './container';
 import Centrifier from './centrifier';
 
 class LoginSection extends Component {
+  state = {
+    tab: 0
+  }
   render () {
     return (
       <div className="login-section">
