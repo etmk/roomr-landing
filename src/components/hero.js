@@ -7,7 +7,9 @@ import Container from './container';
 const Hero = ({ heroImage }) => (
   <div className="hero">
     <Container>
-      <Img fluid={heroImage} />
+    <div className="hero__image-box">
+      <Img className="hero__image" fluid={heroImage} />
+      </div>
       <div className="hero-header-box">
         <div className="first-sentence">
           <p>Spend less time</p>
