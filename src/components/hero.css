@@ -10,10 +10,10 @@
 
 .hero__image-box {
   position: absolute;
-  width:950px;
+  width:925px;
   height:600px;
-  margin-left:150px;
-  margin-top:10px;
+  margin-left:170px;
+  margin-top:25px;
   overflow: hidden;
 }
 
