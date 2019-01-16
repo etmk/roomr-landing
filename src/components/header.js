@@ -10,7 +10,9 @@ import closeMenuIcon from '../images/close_menu_icon.svg';
 class Header extends Component {
   state = {
     prevScrollpos: 0,
-    menuOpen: false
+    menuOpen: false,
+    canShowNavbar: true,
+    showTimer: 'none'
   }
 
   componentDidMount = async () => {
@@ -28,16 +30,27 @@ class Header extends Component {
     this.setState({ prevScrollpos: window.pageYOffset});
   }
 
-  navbarDisplayHandler = () => {
+  navbarDisplayHandler = async () => {
+    if (this.state.showTimer !== 'none') {
+      clearTimeout(this.state.showTimer);
+    }
     const prevScrollpos = this.state.prevScrollpos;
     let currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById('navbar');
     if (
-        (prevScrollpos > currentScrollPos) 
+        (prevScrollpos > currentScrollPos && this.state.canShowNavbar) 
       ) {
       navbar.style.top = "0";
     } else if (window.scrollY > 70) {
       navbar.style.top = "-80px";
+    }
+
+    if (prevScrollpos < currentScrollPos && window.scrollY > 70) {
+      await this.setState({ canShowNavbar: false });
+      navbar.style.top = "-80px";
+      this.setState({scrollTimer : setTimeout(() => {
+        this.setState({ canShowNavbar: true });
+      }, 500)});
     }
     this.setState({ prevScrollpos: currentScrollPos });
   }
