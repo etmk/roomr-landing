@@ -1,9 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import MediaQuery from 'react-responsive';
-import './hero.css';
 
 import Container from './container';
+
+import './hero.css';
 
 const Hero = ({ heroImage }) => (
   <div className="hero">
