@@ -34,25 +34,30 @@ class Header extends Component {
     const prevScrollpos = this.state.prevScrollpos;
     let currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById('navbar');
-    if (
+    if (window.scrollY <= 70) {
+      navbar.style.top = "0"
+    } else {
+      if (
         (prevScrollpos > currentScrollPos && this.state.canShowNavbar) 
       ) {
-      navbar.style.top = "0";
-    } else if (window.scrollY > 70) {
+        navbar.style.top = "0";
+      } else if (window.scrollY > 70) {
       navbar.style.top = "-80px";
-    }
-
-    if (prevScrollpos < currentScrollPos && window.scrollY > 70) {
-      if(this.state.scrollTimer !== 'none') {
-        clearTimeout(this.state.scrollTimer);
       }
-      this.setState({ canShowNavbar: false });
-      navbar.style.top = "-80px";
-      this.setState({scrollTimer : setTimeout(() => {
-        this.setState({ canShowNavbar: true });
-      }, 500)});
+
+      if (prevScrollpos < currentScrollPos && window.scrollY > 70) {
+        if(this.state.scrollTimer !== 'none') {
+          clearTimeout(this.state.scrollTimer);
+        }
+        this.setState({ canShowNavbar: false });
+        navbar.style.top = "-80px";
+        this.setState({scrollTimer : setTimeout(() => {
+          this.setState({ canShowNavbar: true });
+        }, 500)});
+      }
+      this.setState({ prevScrollpos: currentScrollPos });
     }
-    this.setState({ prevScrollpos: currentScrollPos });
+    
   }
   
   toggleMobileMenu = () => {
