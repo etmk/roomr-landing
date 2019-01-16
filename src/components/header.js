@@ -34,18 +34,22 @@ class Header extends Component {
     const prevScrollpos = this.state.prevScrollpos;
     let currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById('navbar');
-    if (window.scrollY <= 70) {
+    if (currentScrollPos > 0 && !navbar.classList.contains('header-shadow')) {
+      navbar.classList.add('header-shadow');
+    } else if (currentScrollPos === 0) {
+      navbar.classList.remove('header-shadow');
+    }
+    if (currentScrollPos <= 70) {
       navbar.style.top = "0"
     } else {
       if (
-        (prevScrollpos > currentScrollPos && this.state.canShowNavbar) 
+        prevScrollpos > currentScrollPos && this.state.canShowNavbar
       ) {
         navbar.style.top = "0";
-      } else if (window.scrollY > 70) {
-      navbar.style.top = "-80px";
+      } else if (currentScrollPos > 70) {
+        navbar.style.top = "-80px";
       }
-
-      if (prevScrollpos < currentScrollPos && window.scrollY > 70) {
+      if (prevScrollpos < currentScrollPos && currentScrollPos > 70) {
         if(this.state.scrollTimer !== 'none') {
           clearTimeout(this.state.scrollTimer);
         }
@@ -57,7 +61,6 @@ class Header extends Component {
       }
       this.setState({ prevScrollpos: currentScrollPos });
     }
-    
   }
   
   toggleMobileMenu = () => {
@@ -69,14 +72,10 @@ class Header extends Component {
   }
 
   render () {
-    let scrollY = 0;
-    if (typeof window !== 'undefined') {
-      scrollY = window.scrollY;
-    }
     return (
       <Fragment>
         <div
-        className={`header-box ${(scrollY > 0)? "header-shadow" : null}`}
+        className="header-box"
         id="navbar"
         >
           <Container>
