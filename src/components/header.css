@@ -4,7 +4,7 @@
   position: fixed;
   top:0;
   width:100%;
-  z-index: 1;
+  z-index: 10;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
@@ -63,7 +63,7 @@
   width:250px;
   height:100%;
   background: #fcf2cb;
-  z-index: 1;
+  z-index: 20;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
   display: flex;
