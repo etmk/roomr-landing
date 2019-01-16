@@ -1,5 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import { graphql } from "gatsby";
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -11,13 +12,12 @@ import LoginSection from '../components/loginSection';
 import SourcecodeSection from '../components/sourcecodeSection';
 import ContactSection from '../components/contactSection';
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`roomr`, `room management`, `open-source`, `free`]} />
     <Element name="heroSection">
-      <Hero />
+      <Hero heroImage={data.heroImage.childImageSharp.fluid}/>
     </Element>
-    
     <Element name="featureSection">
       <FeatureSection />
     </Element>
@@ -36,13 +36,19 @@ const IndexPage = () => (
     <Element name="contactSection">
       <ContactSection />
     </Element>
-    
-    
-    
-    
-    
-    
   </Layout>
 )
 
 export default IndexPage
+
+export const heroImageQuery = graphql`
+  query {
+    heroImage: file(relativePath: { eq: "hero_image.png" }) {
+      childImageSharp {
+        fluid(maxWidth:700) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

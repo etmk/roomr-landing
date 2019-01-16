@@ -1,11 +1,13 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import './hero.css';
 
 import Container from './container';
 
-const Hero = () => (
+const Hero = ({ heroImage }) => (
   <div className="hero">
     <Container>
+      <Img fluid={heroImage} />
       <div className="hero-header-box">
         <div className="first-sentence">
           <p>Spend less time</p>
