@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import MediaQuery from 'react-responsive';
 import './hero.css';
 
 import Container from './container';
@@ -7,9 +8,11 @@ import Container from './container';
 const Hero = ({ heroImage }) => (
   <div className="hero">
     <Container>
-    <div className="hero__image-box">
-      <Img className="hero__image" fluid={heroImage} />
+    <MediaQuery minWidth={501}>
+      <div className="hero__image-box">
+          <Img className="hero__image" fluid={heroImage} />
       </div>
+    </MediaQuery>
       <div className="hero-header-box">
         <div className="first-sentence">
           <p>Spend less time</p>
