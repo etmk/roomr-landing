@@ -12,7 +12,7 @@ class Header extends Component {
     prevScrollpos: 0,
     menuOpen: false,
     canShowNavbar: true,
-    showTimer: 'none'
+    scrollTimer: 'none'
   }
 
   componentDidMount = async () => {
@@ -30,10 +30,7 @@ class Header extends Component {
     this.setState({ prevScrollpos: window.pageYOffset});
   }
 
-  navbarDisplayHandler = async () => {
-    if (this.state.showTimer !== 'none') {
-      clearTimeout(this.state.showTimer);
-    }
+  navbarDisplayHandler = () => {
     const prevScrollpos = this.state.prevScrollpos;
     let currentScrollPos = window.pageYOffset;
     const navbar = document.getElementById('navbar');
@@ -46,7 +43,10 @@ class Header extends Component {
     }
 
     if (prevScrollpos < currentScrollPos && window.scrollY > 70) {
-      await this.setState({ canShowNavbar: false });
+      if(this.state.scrollTimer !== 'none') {
+        clearTimeout(this.state.scrollTimer);
+      }
+      this.setState({ canShowNavbar: false });
       navbar.style.top = "-80px";
       this.setState({scrollTimer : setTimeout(() => {
         this.setState({ canShowNavbar: true });
