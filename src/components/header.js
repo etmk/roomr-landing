@@ -58,7 +58,7 @@ class Header extends Component {
     return (
       <Fragment>
         <div
-        className={`header-box ${(scrollY > 70)? "header-shadow" : null}`}
+        className={`header-box ${(scrollY > 0)? "header-shadow" : null}`}
         id="navbar"
         >
           <Container>
