@@ -29,6 +29,7 @@ class PricingSection extends Component {
   updateWidth = () => {
     this.setState({ width: window.innerWidth });
   }
+  
   onPriceToggle = () => {
     this.setState(prevState => ({ monthly: !prevState.monthly}));
   }
