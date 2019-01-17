@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive';
 
 import SectionHeader from './sectionHeader';
 import Container from './container';
@@ -26,15 +27,15 @@ const SourcecodeSection = () => (
             <img alt="github logo" src={githubLogo} />
             <p>Roomr App</p>
           </a>
-            
           </div>
+          <MediaQuery minWidth={768}>
           <div className="github-box">
             <a rel="noopener noreferrer" target="_blank" href="https://github.com/paul-schaaf/roomr-landing">
               <img alt="github logo" src={githubLogo} />
               <p>Roomr Landing</p>
             </a>
-            
           </div>
+          </MediaQuery>
         </div>
       </Centrifier>
     </Container>
