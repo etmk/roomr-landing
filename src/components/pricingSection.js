@@ -35,7 +35,7 @@ class PricingSection extends Component {
   }
 
   onIndicatorClick = event => {
-    const number = event.target.getAttribute('name');
+    const number = parseInt(event.target.getAttribute('name'));
     this.setState({ plan: number});
   }
 
