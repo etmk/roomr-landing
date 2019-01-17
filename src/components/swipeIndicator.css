@@ -1,0 +1,30 @@
+.swipe-indicator {
+  display: flex;
+  margin-top:30px;
+}
+
+.swipe-indicator .indicator-box {
+  height:15px;
+  width:15px;
+  border-radius:2px;
+  margin-right:15px;
+  opacity:0.5;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.swipe-indicator .active {
+  opacity:1;
+}
+
+.swipe-indicator .indicator-box:last-child {
+  margin-right:0px;
+}
+
+.swipe-indicator div {
+  background: #fcf2cb;
+}
+
+.swipe-indicator--blue div {
+  background: #1e4363;
+}
