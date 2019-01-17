@@ -5,7 +5,7 @@ import Swipeable from 'react-swipeable';
 import SectionHeader from './helperComponents/sectionHeader';
 import Container from './helperComponents/container';
 import Centrifier from './helperComponents/centrifier';
-import IndexIndicator from './helperComponents/container';
+import IndexIndicator from './helperComponents/indexIndicator';
 
 import heartIcon from '../images/heart_icon.svg';
 import githubLogo from '../images/github _logo.svg';

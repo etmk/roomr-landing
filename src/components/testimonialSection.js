@@ -5,7 +5,7 @@ import Swipeable from 'react-swipeable';
 import SectionHeader from './helperComponents/sectionHeader';
 import Container from './helperComponents/container';
 import Centrifier from './helperComponents/centrifier';
-import IndexIndicator from './helperComponents/container';
+import IndexIndicator from './helperComponents/indexIndicator';
 
 import triangleLeft from '../images/testimonial-triangle-left.svg';
 import triangleRight from '../images/testimonial-triangle-right.svg';
@@ -75,8 +75,7 @@ class TestimonialSection extends Component {
               </MediaQuery>
             </div>
           </Centrifier>
-        </Container>
-        <Container>
+        
           <Centrifier>
             <div className="testimonial-company">
               {this.state.testimonial === 0 &&
@@ -90,8 +89,6 @@ class TestimonialSection extends Component {
               }
             </div>
           </Centrifier>
-        </Container>
-        <Container>
           <Centrifier>
             <IndexIndicator
               onIndicatorClick={this.onIndicatorClick}
