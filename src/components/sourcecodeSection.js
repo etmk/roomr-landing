@@ -31,7 +31,7 @@ class SourcecodeSection extends Component {
   }
 
   onIndicatorClick = event => {
-    const number = parseInt(vent.target.getAttribute('name'));
+    const number = parseInt(event.target.getAttribute('name'));
     this.setState({ link: number });
   }
 
