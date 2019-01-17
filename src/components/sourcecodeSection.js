@@ -9,7 +9,7 @@ import Centrifier from './centrifier';
 import './sourcecodeSection.css';
 import heartIcon from '../images/heart_icon.svg';
 import githubLogo from '../images/github _logo.svg';
-import SwipeIndicator from './swipeIndicator';
+import IndexIndicator from './indexIndicator';
 
 class SourcecodeSection extends Component {
   state = {
@@ -90,7 +90,7 @@ class SourcecodeSection extends Component {
           </Swipeable>
           <MediaQuery maxWidth={767}>
               <Centrifier>
-                <SwipeIndicator
+                <IndexIndicator
                   isTwo
                   onIndicatorClick={this.onIndicatorClick}
                   index={this.state.link}

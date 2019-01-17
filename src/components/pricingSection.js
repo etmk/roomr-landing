@@ -5,7 +5,7 @@ import Swipeable from 'react-swipeable'
 import Container from './container';
 import Centrifier from './centrifier';
 import SectionHeader from './sectionHeader';
-import SwipeIndicator from './swipeIndicator';
+import IndexIndicator from './indexIndicator';
 
 import './pricingSection.css';
 
@@ -127,7 +127,7 @@ class PricingSection extends Component {
           </Centrifier>
           <MediaQuery maxWidth={984}>
             <Centrifier>
-              <SwipeIndicator
+              <IndexIndicator
                 isBlue
                 onIndicatorClick={this.onIndicatorClick}
                 index={this.state.plan}

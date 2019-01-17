@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './swipeIndicator.css';
+import './indexIndicator.css';
 
-class SwipeIndicator extends Component {
+class IndexIndicator extends Component {
 
   onIndicatorClick = event => {
     this.props.onIndicatorClick(event);
@@ -10,7 +10,7 @@ class SwipeIndicator extends Component {
 
   render () {
     return (
-      <div className={`swipe-indicator ${(this.props.isBlue) ? "swipe-indicator--blue" : null}`}>
+      <div className={`index-indicator ${(this.props.isBlue) ? "index-indicator--blue" : null}`}>
         <div
           onClick={this.onIndicatorClick}
           name="0"
@@ -33,4 +33,4 @@ class SwipeIndicator extends Component {
   }
 }
 
-export default SwipeIndicator;
+export default IndexIndicator;
