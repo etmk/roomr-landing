@@ -7,6 +7,7 @@ import SectionHeader from './sectionHeader';
 import './testimonialSection.css';
 import Centrifier from './centrifier';
 import Container from './container';
+import SwipeIndicator from './swipeIndicator';
 
 import triangleLeft from '../images/testimonial-triangle-left.svg';
 import triangleRight from '../images/testimonial-triangle-right.svg';
@@ -92,23 +93,10 @@ class TestimonialSection extends Component {
         </Container>
         <Container>
           <Centrifier>
-            <div className="testimonial__swipe-indicator">
-              <div
-                onClick={this.onIndicatorClick}
-                name="0"
-                className={`indicator-box ${(this.state.testimonial===0) ? "active" : null}`}>
-              </div>
-              <div
-                onClick={this.onIndicatorClick}
-                name="1"
-                className={`indicator-box ${(this.state.testimonial===1) ? "active" : null}`}>
-              </div>
-              <div
-                onClick={this.onIndicatorClick}
-                name="2"
-                className={`indicator-box ${(this.state.testimonial===2) ? "active" : null}`}>
-              </div>
-            </div>
+            <SwipeIndicator
+              onIndicatorClick={this.onIndicatorClick}
+              index={this.state.testimonial}
+            />
           </Centrifier>
         </Container>
       </div>

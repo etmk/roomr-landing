@@ -31,29 +31,6 @@
   font-weight:300;
 }
 
-.testimonial__swipe-indicator {
-  display:flex;
-  margin-top:30px;
-}
-
-.testimonial__swipe-indicator .indicator-box {
-  height:15px;
-  width:15px;
-  background: #fcf2cb;
-  border-radius:2px;
-  margin-right:15px;
-  opacity:0.5;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.testimonial__swipe-indicator .active {
-  opacity:1;
-}
-
-.testimonial__swipe-indicator .indicator-box:last-child {
-  margin-right:0px;
-}
 
 @media screen and (max-width:900px) {
   .testimonial {
