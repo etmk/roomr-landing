@@ -63,11 +63,11 @@ class SourcecodeSection extends Component {
               <p>Open Source</p>
             </div>
           </Centrifier>
-          <Centrifier>
-            <Swipeable
+          <Swipeable
               onSwipedLeft={this.moveRight}
               onSwipedRight={this.moveLeft}
             >
+            <Centrifier>
               <div className="sourcecode-content-box">
                 {(this.state.link === 0 || this.state.width > 767) &&
                   <div className="github-box">
@@ -86,8 +86,8 @@ class SourcecodeSection extends Component {
                   </div>
                 }
               </div>
-            </Swipeable>
-          </Centrifier>
+            </Centrifier>
+          </Swipeable>
           <MediaQuery maxWidth={767}>
               <Centrifier>
                 <SwipeIndicator
