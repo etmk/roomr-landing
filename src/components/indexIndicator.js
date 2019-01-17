@@ -10,7 +10,7 @@ class IndexIndicator extends Component {
 
   createIndicators = () => {
     let indicatorList = [];
-    for (i = 0; i < this.props.amount; i++) {
+    for (let i = 0; i < this.props.amount; i++) {
       const indicator = (
         <div
           onClick={this.onIndicatorClick}
