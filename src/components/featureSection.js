@@ -1,11 +1,10 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
 
-import Container from './container';
-import Centrifier from './centrifier';
-import SectionHeader from './sectionHeader';
+import SectionHeader from './helperComponents/sectionHeader';
+import Container from './helperComponents/container';
+import Centrifier from './helperComponents/centrifier';
 
-import './featureSection.css';
 import triangle from "../images/feature-triangle.svg";
 import bookIcon from "../images/book_and_unbook.svg";
 import bookIconBold from "../images/book_and_unbook_bold.svg";
@@ -19,6 +18,8 @@ import analyticsIcon from "../images/analytics_icon.svg";
 import analyticsIconBold from '../images/analytics_icon_bold.svg';
 import keyIcon from "../images/key_icon.svg";
 import keyIconBold from '../images/key_icon_bold.svg';
+
+import './featureSection.css';
 
 const FeatureSection = () => (
   <div className="feature-section">

@@ -3,9 +3,11 @@ import React, { Component, Fragment } from 'react'
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-scroll';
 
-import Container from './container';
+import Container from '../helperComponents/container';
+
+import closeMenuIcon from '../../images/close_menu_icon.svg';
+
 import './header.css';
-import closeMenuIcon from '../images/close_menu_icon.svg';
 
 class Header extends Component {
   state = {

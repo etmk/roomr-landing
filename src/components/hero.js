@@ -2,7 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import MediaQuery from 'react-responsive';
 
-import Container from './container';
+import Container from './helperComponents/container';
 
 import './hero.css';
 

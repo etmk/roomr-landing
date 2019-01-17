@@ -2,7 +2,7 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import { graphql } from "gatsby";
 
-import Layout from '../components/layout';
+import Layout from '../components/layoutComponents/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
 import FeatureSection from '../components/featureSection';

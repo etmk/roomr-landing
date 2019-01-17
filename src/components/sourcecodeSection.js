@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import Swipeable from 'react-swipeable';
 
-import SectionHeader from './sectionHeader';
-import Container from './container';
-import Centrifier from './centrifier';
+import SectionHeader from './helperComponents/sectionHeader';
+import Container from './helperComponents/container';
+import Centrifier from './helperComponents/centrifier';
+import IndexIndicator from './helperComponents/container';
 
-import './sourcecodeSection.css';
 import heartIcon from '../images/heart_icon.svg';
 import githubLogo from '../images/github _logo.svg';
-import IndexIndicator from './indexIndicator';
+
+import './sourcecodeSection.css';
 
 class SourcecodeSection extends Component {
   state = {

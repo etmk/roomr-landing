@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Container from './container';
-import Centrifier from './centrifier';
+import Container from '../helperComponents/container';
+import Centrifier from '../helperComponents/centrifier';
+
 import './footer.css';
 
 const Footer = () => (

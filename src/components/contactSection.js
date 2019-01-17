@@ -1,15 +1,15 @@
 import React from 'react';
 
-import SectionHeader from './sectionHeader';
-import Container from './container';
-import Centrifier from './centrifier';
-
-import './contactSection.css';
+import SectionHeader from './helperComponents/sectionHeader';
+import Container from './helperComponents/container';
+import Centrifier from './helperComponents/centrifier';
 
 import fbIcon from '../images/fb_icon.svg';
 import linkedinIcon from '../images/linkedin_icon.svg';
 import mailIcon from '../images/mail_icon.svg';
 import twitterIcon from '../images/twitter_icon.svg';
+
+import './contactSection.css';
 
 const ContactSection = () => (
   <div className="contact-section">

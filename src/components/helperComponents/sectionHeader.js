@@ -1,9 +1,10 @@
 import React from 'react';
-import './sectionHeader.css';
 import MediaQuery from 'react-responsive';
 
 import Container from './container';
 import Centrifier from './centrifier';
+
+import './sectionHeader.css';
 
 const SectionHeader = ({ text, smallLine, bigLine, isBlue }) => (
   <Container>

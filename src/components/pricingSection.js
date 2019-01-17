@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import Swipeable from 'react-swipeable'
 
-import Container from './container';
-import Centrifier from './centrifier';
-import SectionHeader from './sectionHeader';
-import IndexIndicator from './indexIndicator';
+import SectionHeader from './helperComponents/sectionHeader';
+import Container from './helperComponents/container';
+import Centrifier from './helperComponents/centrifier';
+import IndexIndicator from './helperComponents/container';
 
 import './pricingSection.css';
 

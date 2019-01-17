@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import Swipeable from 'react-swipeable';
 
-import SectionHeader from './sectionHeader';
-
-import './testimonialSection.css';
-import Centrifier from './centrifier';
-import Container from './container';
-import IndexIndicator from './indexIndicator';
+import SectionHeader from './helperComponents/sectionHeader';
+import Container from './helperComponents/container';
+import Centrifier from './helperComponents/centrifier';
+import IndexIndicator from './helperComponents/container';
 
 import triangleLeft from '../images/testimonial-triangle-left.svg';
 import triangleRight from '../images/testimonial-triangle-right.svg';
+
+import './testimonialSection.css';
 
 class TestimonialSection extends Component {
   state = {
