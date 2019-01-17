@@ -59,7 +59,7 @@ class TestimonialSection extends Component {
                   <p className="testimonial">We used to spend loads of time looking for rooms. Additionally, workers looking for rooms would interrupt meetings because they were not sure whether a room was vacant or not. Roomr helped us find rooms more quickly and made sure everyone was informed at all times.</p>
                 }
                 {this.state.testimonial === 1 &&
-                  <p className="testimonial">Thanks to the SAML single sign-on feature we could easily sign up all our 300 employees using the login data we already had. We had some problems while setting up but the support team helped us quickly and we got it done in under half an hour. Thank guys!</p>
+                  <p className="testimonial">Thanks to the SAML single sign-on feature we could easily sign up all our 300 employees using the login data we already had. We had some problems while setting up but the support team helped us quickly and we got it done in under half an hour. Thanks guys!</p>
                 }
                 {this.state.testimonial === 2 &&
                   <p className="testimonial">We chose roomr because the usage analytics are just so helpful. We can quickly observe which rooms are used most and at what times. On top of that, the calendar integration automatically reminds everyone so forgotten meetings are now a thing of the past for us! </p>
