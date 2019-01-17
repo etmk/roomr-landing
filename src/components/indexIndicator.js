@@ -8,26 +8,25 @@ class IndexIndicator extends Component {
     this.props.onIndicatorClick(event);
   }
 
+  createIndicators = () => {
+    let indicatorList = [];
+    for (i = 0; i < this.props.amount; i++) {
+      const indicator = (
+        <div
+          onClick={this.onIndicatorClick}
+          name={i}
+          className={`indicator-box ${(this.props.index === i) ? "active" : null}`}
+        />
+      )
+      indicatorList.push(indicator);
+    }
+    return indicatorList;
+  }
+
   render () {
     return (
       <div className={`index-indicator ${(this.props.isBlue) ? "index-indicator--blue" : null}`}>
-        <div
-          onClick={this.onIndicatorClick}
-          name="0"
-          className={`indicator-box ${(this.props.index===0) ? "active" : null}`}>
-        </div>
-        <div
-          onClick={this.onIndicatorClick}
-          name="1"
-          className={`indicator-box ${(this.props.index===1) ? "active" : null}`}>
-        </div>
-        {!this.props.isTwo && 
-          <div
-            onClick={this.onIndicatorClick}
-            name="2"
-            className={`indicator-box ${(this.props.index===2) ? "active" : null}`}>
-          </div>
-        }
+        {this.createIndicators()}
       </div>
     )
   }

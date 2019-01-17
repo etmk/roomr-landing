@@ -35,7 +35,7 @@ class PricingSection extends Component {
   }
 
   onIndicatorClick = event => {
-    const number = parseInt(event.target.getAttribute('name'));
+    const number = event.target.getAttribute('name');
     this.setState({ plan: number});
   }
 
@@ -131,6 +131,7 @@ class PricingSection extends Component {
                 isBlue
                 onIndicatorClick={this.onIndicatorClick}
                 index={this.state.plan}
+                amount={3}
               /> 
             </Centrifier>
           </MediaQuery>

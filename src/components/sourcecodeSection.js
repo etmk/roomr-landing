@@ -31,7 +31,7 @@ class SourcecodeSection extends Component {
   }
 
   onIndicatorClick = event => {
-    const number = parseInt(event.target.getAttribute('name'));
+    const number = event.target.getAttribute('name');
     this.setState({ link: number });
   }
 
@@ -94,6 +94,7 @@ class SourcecodeSection extends Component {
                   isTwo
                   onIndicatorClick={this.onIndicatorClick}
                   index={this.state.link}
+                  amount={2}
                 />
               </Centrifier>
           </MediaQuery>

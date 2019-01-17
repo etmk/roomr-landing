@@ -18,7 +18,7 @@ class TestimonialSection extends Component {
   }
 
   onIndicatorClick = event => {
-    const number = parseInt(event.target.getAttribute('name'));
+    const number = event.target.getAttribute('name');
     this.setState({ testimonial: number });
   }
 
@@ -96,6 +96,7 @@ class TestimonialSection extends Component {
             <IndexIndicator
               onIndicatorClick={this.onIndicatorClick}
               index={this.state.testimonial}
+              amount={3}
             />
           </Centrifier>
         </Container>
