@@ -13,6 +13,7 @@ class IndexIndicator extends Component {
     for (let i = 0; i < this.props.amount; i++) {
       const indicator = (
         <div
+          key={`Indicator ${i}`}
           onClick={this.onIndicatorClick}
           name={i}
           className={`indicator-box ${(this.props.index === i) ? "active" : null}`}
