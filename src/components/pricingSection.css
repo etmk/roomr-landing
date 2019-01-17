@@ -43,6 +43,7 @@
 
 .pricing__plans-box {
   display: flex;
+  margin-bottom:30px;
 }
 
 .pricing__plans-box .plan-box {
