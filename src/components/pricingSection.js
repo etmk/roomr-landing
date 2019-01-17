@@ -5,6 +5,7 @@ import Swipeable from 'react-swipeable'
 import Container from './container';
 import Centrifier from './centrifier';
 import SectionHeader from './sectionHeader';
+import SwipeIndicator from './swipeIndicator';
 
 import './pricingSection.css';
 
@@ -125,23 +126,11 @@ class PricingSection extends Component {
           </Centrifier>
           <MediaQuery maxWidth={984}>
             <Centrifier>
-              <div className="pricing__swipe-indicator">
-                <div
-                  onClick={this.onIndicatorClick}
-                  name="0"
-                  className={`indicator-box ${(this.state.plan===0) ? "active" : null}`}>
-                </div>
-                <div
-                  onClick={this.onIndicatorClick}
-                  name="1"
-                  className={`indicator-box ${(this.state.plan===1) ? "active" : null}`}>
-                </div>
-                <div
-                  onClick={this.onIndicatorClick}
-                  name="2"
-                  className={`indicator-box ${(this.state.plan===2) ? "active" : null}`}>
-                </div>
-              </div>
+              <SwipeIndicator
+                isBlue
+                onIndicatorClick={this.onIndicatorClick}
+                index={this.state.plan}
+              /> 
             </Centrifier>
           </MediaQuery>
         </Container>

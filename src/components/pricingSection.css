@@ -97,29 +97,7 @@
   margin-top:5px;
 }
 
-.pricing__swipe-indicator {
-  margin-top:30px;
-  display:flex;
-}
 
-.pricing__swipe-indicator .indicator-box {
-  height:15px;
-  width:15px;
-  background: #1e4363;
-  border-radius:3px;
-  margin-right:15px;
-  opacity:0.5;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.pricing__swipe-indicator .active {
-  opacity:1;
-}
-
-.pricing__swipe-indicator .indicator-box:last-child {
-  margin-right:0px;
-}
 
 @media screen and (max-width:999px) {
   .pricing__plans-box .plan-box {
