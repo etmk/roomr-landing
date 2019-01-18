@@ -27,6 +27,11 @@ class SourcecodeSection extends Component {
     window.removeEventListener("resize", this.updateWidth);
   }
 
+  /**
+   * for some reason, using mediaqueries from react-responsive
+   * sometimes breaks the app, which is why I have created my own
+   * mediaquery with updateWidth, until I find the cause
+   */
   updateWidth = () => {
     this.setState({ width: window.innerWidth });
   }

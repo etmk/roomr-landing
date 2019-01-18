@@ -1,6 +1,10 @@
 import React from 'react';
 import './container.css';
 
+/**
+ * container has css to give wrap its children
+ * in a container that has left and right margins
+ */
 const Container = ({ children }) => {
   return (
     <div className="container">
