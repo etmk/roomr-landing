@@ -85,6 +85,7 @@
   .feature-box__row {
     width:800px;
   }
+
   .card--book {
     margin-right:100px;
   }
@@ -100,7 +101,6 @@
   .card--analytics {
     margin-right:100px;
   }
-  
 }
 
 @media screen and (max-width: 930px) {
