@@ -48,8 +48,6 @@ class Header extends Component {
         prevScrollpos > currentScrollPos && this.state.canShowNavbar
       ) {
         navbar.style.top = "0";
-      } else if (currentScrollPos > 70) {
-        navbar.style.top = "-80px";
       }
       if (prevScrollpos < currentScrollPos && currentScrollPos > 70) {
         if(this.state.scrollTimer !== 'none') {
