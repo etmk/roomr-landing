@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { navigate } from 'gatsby';
 
-import Layout from '../components/layoutComponents/layout'
-import SEO from '../components/seo'
-
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+class NotFoundPage extends Component {
+  componentDidMount = () => {
+    navigate('/');
+  }
+  
+  render () {
+    return <div></div>
+  }
+}
 
 export default NotFoundPage
