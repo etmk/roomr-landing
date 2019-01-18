@@ -65,10 +65,8 @@
   background: #fcf2cb;
   z-index: 20;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-
   display: flex;
   flex-direction: column;
-
   box-shadow: -1px 0px 4px 0px rgba(0,0,0,0.5);
 }
 
